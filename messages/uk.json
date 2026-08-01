@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "Mila Patramanska — Performance-маркетологиня | Портфоліо",
+    "description": "Performance-маркетологиня з 7-річним досвідом: понад 15 проєктів, до $200K щомісячного бюджету під керівництвом та ROMI 500%+. Платні кампанії, аналітика, стратегія росту.",
+    "keywords": "маркетолог, performance маркетинг, digital маркетинг, таргетована реклама, PPC, ROMI, портфоліо маркетолога, growth marketing"
+  },
+  "skipToContent": "Перейти до вмісту",
+  "nav": {
+    "about": "Про мене",
+    "work": "Роботи",
+    "services": "Послуги",
+    "process": "Співпраця",
+    "faq": "Питання",
+    "contact": "Контакти",
+    "cta": "Обговорити проєкт",
+    "menu": "Меню",
+    "close": "Закрити"
+  },
+  "hero": {
+    "eyebrow": "Performance-маркетологиня",
+    "title": "Перетворюю рекламний бюджет на прогнозований ріст",
+    "subtitle": "7 років у performance-маркетингу, 15+ завершених проєктів та ROMI до 500%+. Будую медіастратегії, які продають, а не просто показуються.",
+    "bannerLabel": "Статус:",
+    "bannerValue": "відкрита для нових проєктів у 2026 році",
+    "ctaPrimary": "Обговорити проєкт",
+    "ctaSecondary": "Переглянути роботи",
+    "scrollHint": "Гортайте далі"
+  },
+  "about": {
+    "eyebrow": "Про мене",
+    "title": "Маркетинг як система, а не набір гіпотез навмання",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    ],
+    "highlights": [
+      { "label": "Досвід у маркетингу", "value": "7 років" },
+      { "label": "Завершених проєктів", "value": "15+" },
+      { "label": "Ніш і індустрій", "value": "12+" },
+      { "label": "Команд під керівництвом", "value": "6" }
+    ],
+    "imageAlt": "Портрет маркетологині за роботою"
+  },
+  "stats": {
+    "eyebrow": "Досвід і результати",
+    "title": "Цифри, які говорять самі за себе",
+    "subtitle": "За 7 років у performance-маркетингу я перетворила рекламні бюджети клієнтів на вимірюваний, прогнозований прибуток.",
+    "items": [
+      { "value": "15", "suffix": "+", "label": "Реалізованих проєктів" },
+      { "value": "7", "suffix": "+", "label": "Років у маркетингу" },
+      { "value": "200", "suffix": "K$", "label": "Максимальний бюджет на місяць" },
+      { "value": "500", "suffix": "%+", "label": "Максимальний ROMI на проєкті" }
+    ]
+  },
+  "work": {
+    "eyebrow": "Роботи",
+    "title": "Вибрані кейси",
+    "subtitle": "Кілька проєктів, де стратегія й дисципліна в тестуванні дали відчутний результат у грошах.",
+    "viewCase": "Деталі кейсу",
+    "viewAll": "Усі кейси",
+    "items": [
+      {
+        "tag": "E-commerce",
+        "title": "Ріст онлайн-продажів ритейлера",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+        "metric": "ROMI 480%"
+      },
+      {
+        "tag": "SaaS",
+        "title": "Масштабування лідогенерації B2B-продукту",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "metric": "-42% CPL"
+      },
+      {
+        "tag": "Мобільний застосунок",
+        "title": "Запуск і масштабування застосунку на нові ринки",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
+        "metric": "x3.2 інсталяції"
+      },
+      {
+        "tag": "Fintech",
+        "title": "Перезапуск платної реклами фінтех-продукту",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+        "metric": "ROMI 512%"
+      },
+      {
+        "tag": "DTC Beauty",
+        "title": "Побудова performance-воронки з нуля",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "metric": "x4 виручка"
+      },
+      {
+        "tag": "EdTech",
+        "title": "Оптимізація юніт-економіки платних кампаній",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.",
+        "metric": "-35% CAC"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Послуги",
+    "title": "Чим я можу допомогти вашому бізнесу",
+    "subtitle": "Від разового аудиту до повного циклу performance-маркетингу під ключ.",
+    "items": [
+      {
+        "title": "Платна реклама",
+        "description": "Стратегія, запуск і щоденна оптимізація кампаній у Meta, Google Ads та TikTok Ads. Тестую гіпотези, масштабую переможні звʼязки та тримаю CPA й ROMI під контролем на кожному етапі воронки — від першого кліка до повторної покупки."
+      },
+      {
+        "title": "Маркетингова стратегія",
+        "description": "Аналізую ринок, аудиторію та конкурентів, щоб побудувати чіткий план росту на 3–6 місяців наперед: пріоритетні канали, розподіл бюджету, очікувані результати та контрольні точки для перевірки прогресу."
+      },
+      {
+        "title": "Аналітика та наскрізна аналітика",
+        "description": "Налаштовую наскрізну аналітику від першого кліка до оплати: коректну атрибуцію, дашборди в реальному часі та прозору звітність — щоб рішення ухвалювались на основі цифр, а не інтуїції чи припущень."
+      },
+      {
+        "title": "CRO та воронки продажів",
+        "description": "Проєктую та A/B-тестую воронки продажів, лендінги і форми заявок, щоб перетворювати більше трафіку на клієнтів без збільшення бюджету на рекламу — фокус на конверсії на кожному кроці шляху покупця."
+      },
+      {
+        "title": "Побудова та навчання команди",
+        "description": "Формую та навчаю внутрішні маркетингові команди — від найму спеціалістів і побудови оргструктури до впровадження процесів і документації, які працюють стабільно навіть без мого щоденного залучення."
+      },
+      {
+        "title": "Аудит маркетингу",
+        "description": "Детальний розбір поточних кампаній, аналітики, воронки продажів і сайту з конкретним списком точок росту, пріоритезованим за впливом на виручку, та планом дій на найближчі 30 днів."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Співпраця",
+    "title": "Як проходить робота над проєктом",
+    "subtitle": "Прозорий процес без сюрпризів — від першого дзвінка до масштабування результатів.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Знайомство та бриф",
+        "description": "Обговорюємо цілі бізнесу, поточні показники та очікування від співпраці."
+      },
+      {
+        "number": "02",
+        "title": "Аудит і стратегія",
+        "description": "Аналізую поточні кампанії, ринок і конкурентів, формую план дій із прогнозом результату."
+      },
+      {
+        "number": "03",
+        "title": "Запуск і тестування",
+        "description": "Впроваджую гіпотези, запускаю кампанії, налаштовую аналітику та звітність."
+      },
+      {
+        "number": "04",
+        "title": "Оптимізація",
+        "description": "Щотижня аналізую дані, відсікаю неефективне, масштабую те, що приносить результат."
+      },
+      {
+        "number": "05",
+        "title": "Звіт і масштабування",
+        "description": "Регулярні прозорі звіти та план подальшого росту бюджету й результату."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Питання",
+    "title": "Часті запитання",
+    "subtitle": "Не знайшли відповіді на своє питання? Напишіть мені напряму.",
+    "items": [
+      {
+        "question": "З якими бюджетами ви працюєте?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "question": "Скільки часу потрібно на перші результати?",
+        "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "question": "Ви працюєте самостійно чи з командою?",
+        "answer": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "question": "Які звіти я отримуватиму?",
+        "answer": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "question": "Чи можна почати з разового аудиту?",
+        "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem."
+      },
+      {
+        "question": "У яких нішах ви маєте досвід?",
+        "answer": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Контакти",
+    "title": "Обговоримо ваш проєкт",
+    "subtitle": "Розкажіть коротко про бізнес і цілі — відповідаю протягом 24 годин.",
+    "directLabel": "Або напишіть напряму",
+    "form": {
+      "name": "Ім'я",
+      "namePlaceholder": "Як до вас звертатись",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "budget": "Орієнтовний бюджет",
+      "budgetPlaceholder": "Оберіть діапазон",
+      "budgetOptions": ["до $1,000", "$1,000–5,000", "$5,000–20,000", "$20,000+"],
+      "message": "Повідомлення",
+      "messagePlaceholder": "Розкажіть про ваш проєкт і цілі",
+      "submit": "Надіслати повідомлення",
+      "submitting": "Надсилаю…",
+      "success": "Дякую! Ваше повідомлення надіслано, відповім найближчим часом.",
+      "error": "Щось пішло не так. Спробуйте ще раз або напишіть напряму на пошту."
+    }
+  },
+  "footer": {
+    "rights": "Усі права захищено.",
+    "disclaimer": "Матеріали на сайті мають ознайомчий характер. Результати кейсів наведені для демонстрації підходу й не гарантують ідентичних показників для кожного бізнесу.",
+    "backToTop": "Нагору"
+  }
+}

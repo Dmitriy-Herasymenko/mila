@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "Mila Patramanska — Performance Marketer | Portfolio",
+    "description": "Performance marketer with 7 years of experience: 15+ projects delivered, up to $200K in monthly budget managed, and up to 500%+ ROMI. Paid media, analytics, growth strategy.",
+    "keywords": "marketer, performance marketing, digital marketing, paid ads, PPC, ROMI, marketer portfolio, growth marketing"
+  },
+  "skipToContent": "Skip to content",
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "services": "Services",
+    "process": "Process",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Discuss a project",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "hero": {
+    "eyebrow": "Performance Marketer",
+    "title": "Turning ad budget into predictable growth",
+    "subtitle": "7 years in performance marketing, 15+ completed projects, and ROMI up to 500%+. I build media strategies that sell — not just get impressions.",
+    "bannerLabel": "Status:",
+    "bannerValue": "open for new projects in 2026",
+    "ctaPrimary": "Discuss a project",
+    "ctaSecondary": "View work",
+    "scrollHint": "Scroll to explore"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "Marketing as a system, not a pile of random hypotheses",
+    "paragraphs": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    ],
+    "highlights": [
+      { "label": "Years in marketing", "value": "7 years" },
+      { "label": "Projects delivered", "value": "15+" },
+      { "label": "Industries covered", "value": "12+" },
+      { "label": "Teams managed", "value": "6" }
+    ],
+    "imageAlt": "Portrait of the marketer at work"
+  },
+  "stats": {
+    "eyebrow": "Track record",
+    "title": "Numbers that speak for themselves",
+    "subtitle": "Over 7 years in performance marketing, I've turned client ad budgets into measurable, predictable profit.",
+    "items": [
+      { "value": "15", "suffix": "+", "label": "Projects delivered" },
+      { "value": "7", "suffix": "+", "label": "Years in marketing" },
+      { "value": "200", "suffix": "K$", "label": "Max monthly budget managed" },
+      { "value": "500", "suffix": "%+", "label": "Max ROMI on a project" }
+    ]
+  },
+  "work": {
+    "eyebrow": "Work",
+    "title": "Selected case studies",
+    "subtitle": "A few projects where strategy and disciplined testing produced results measured in real revenue.",
+    "viewCase": "Case details",
+    "viewAll": "All case studies",
+    "items": [
+      {
+        "tag": "E-commerce",
+        "title": "Scaling online sales for a retail brand",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
+        "metric": "480% ROMI"
+      },
+      {
+        "tag": "SaaS",
+        "title": "Scaling B2B lead generation",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
+        "metric": "-42% CPL"
+      },
+      {
+        "tag": "Mobile App",
+        "title": "Launching and scaling into new markets",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
+        "metric": "3.2x installs"
+      },
+      {
+        "tag": "Fintech",
+        "title": "Relaunching paid media for a fintech product",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
+        "metric": "512% ROMI"
+      },
+      {
+        "tag": "DTC Beauty",
+        "title": "Building a performance funnel from scratch",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "metric": "4x revenue"
+      },
+      {
+        "tag": "EdTech",
+        "title": "Optimizing unit economics of paid campaigns",
+        "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.",
+        "metric": "-35% CAC"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "How I can help your business",
+    "subtitle": "From a one-off audit to full-cycle performance marketing.",
+    "items": [
+      {
+        "title": "Paid advertising",
+        "description": "Strategy, launch, and daily optimization of campaigns across Meta, Google Ads, and TikTok Ads. I test hypotheses, scale winning ad sets, and keep CPA and ROMI under control at every stage of the funnel — from the first click to repeat purchase."
+      },
+      {
+        "title": "Marketing strategy",
+        "description": "I analyze the market, audience, and competitors to build a clear 3–6 month growth plan: priority channels, budget allocation, expected outcomes, and checkpoints to track progress along the way."
+      },
+      {
+        "title": "Analytics & attribution",
+        "description": "I set up end-to-end analytics from first click to payment: accurate attribution, real-time dashboards, and transparent reporting — so decisions are made on data, not intuition or guesswork."
+      },
+      {
+        "title": "CRO & funnel design",
+        "description": "I design and A/B test sales funnels, landing pages, and lead forms to convert more traffic into customers without increasing ad spend — with a focus on conversion at every step of the buyer's journey."
+      },
+      {
+        "title": "Team building & training",
+        "description": "I build and train in-house marketing teams — from hiring specialists and shaping team structure to implementing processes and documentation that keep running smoothly without my day-to-day involvement."
+      },
+      {
+        "title": "Marketing audit",
+        "description": "A detailed review of current campaigns, analytics, funnel, and website with a concrete list of growth opportunities, prioritized by revenue impact, plus an action plan for the next 30 days."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "How a project comes together",
+    "subtitle": "A transparent process with no surprises — from the first call to scaling results.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Intro call & brief",
+        "description": "We discuss business goals, current metrics, and expectations from the collaboration."
+      },
+      {
+        "number": "02",
+        "title": "Audit & strategy",
+        "description": "I analyze current campaigns, the market, and competitors, then build a plan with a forecasted outcome."
+      },
+      {
+        "number": "03",
+        "title": "Launch & testing",
+        "description": "I implement hypotheses, launch campaigns, and set up analytics and reporting."
+      },
+      {
+        "number": "04",
+        "title": "Optimization",
+        "description": "Weekly, I analyze the data, cut what underperforms, and scale what drives results."
+      },
+      {
+        "number": "05",
+        "title": "Reporting & scaling",
+        "description": "Regular transparent reports and a plan for further growing budget and results."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "subtitle": "Didn't find the answer you're looking for? Reach out directly.",
+    "items": [
+      {
+        "question": "What budgets do you work with?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      {
+        "question": "How soon can I expect first results?",
+        "answer": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      {
+        "question": "Do you work solo or with a team?",
+        "answer": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "question": "What kind of reporting will I get?",
+        "answer": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "question": "Can we start with a one-off audit?",
+        "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem."
+      },
+      {
+        "question": "What industries do you have experience in?",
+        "answer": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's discuss your project",
+    "subtitle": "Tell me briefly about your business and goals — I reply within 24 hours.",
+    "directLabel": "Or reach out directly",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "How should I call you",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "budget": "Estimated budget",
+      "budgetPlaceholder": "Select a range",
+      "budgetOptions": ["Up to $1,000", "$1,000–5,000", "$5,000–20,000", "$20,000+"],
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project and goals",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "success": "Thanks! Your message has been sent, I'll get back to you soon.",
+      "error": "Something went wrong. Please try again or email me directly."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "disclaimer": "Content on this site is for informational purposes. Case study results are shown to illustrate approach and do not guarantee identical outcomes for every business.",
+    "backToTop": "Back to top"
+  }
+}
