@@ -18,15 +18,15 @@ export function SectionForm({
   initialEn: unknown;
 }) {
   const [locale, setLocale] = useState<"uk" | "en">("uk");
-  const [uk, setUk] = useState(initialUk);
-  const [en, setEn] = useState(initialEn);
+  const [uk, setUk] = useState<unknown>(initialUk);
+  const [en, setEn] = useState<unknown>(initialEn);
   const [status, setStatus] = useState<Status>("idle");
 
   const data = locale === "uk" ? uk : en;
   const setData = locale === "uk" ? setUk : setEn;
 
   function handleChange(path: PathKey[], value: unknown) {
-    setData((prev) => setAtPath(prev, path, value));
+    setData((prev: unknown) => setAtPath(prev, path, value));
   }
 
   async function handleSave() {
