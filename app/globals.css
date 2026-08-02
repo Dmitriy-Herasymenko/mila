@@ -2,15 +2,16 @@
 
 @theme {
   /* Colors */
-  --color-espresso: #140b00;
-  --color-midnight-cocoa: #0b0600;
-  --color-warm-cream: #fff1e0;
-  --color-soft-cream: #f1f1f1;
-  --color-walnut: #43392d;
-  --color-cedar: #4f4538;
-  --color-driftwood: #85796c;
-  --color-burnt-edge: #181109;
-  --color-accent: #ffb442;
+  --color-espresso: #231815;
+  --color-midnight-cocoa: #4a2e27;
+  --color-warm-cream: #f5efc6;
+  --color-soft-cream: #f5efc6;
+  --color-walnut: rgba(245, 239, 198, 0.18);
+  --color-cedar: rgba(245, 239, 198, 0.3);
+  --color-driftwood: rgba(245, 239, 198, 0.55);
+  --color-burnt-edge: #1c1310;
+  --color-accent: #a5bcd6;
+  --color-wine: #4d0e12;
 
   /* Fonts */
   --font-neue-haas: var(--font-inter), "Helvetica Neue", Helvetica, ui-sans-serif, system-ui, sans-serif;
@@ -132,7 +133,7 @@ button:disabled {
   align-items: center;
   justify-content: center;
   background-color: var(--color-accent);
-  color: var(--color-warm-cream);
+  color: var(--color-espresso);
   border: none;
   border-radius: var(--radius-buttons);
   font-family: var(--font-neue-haas);

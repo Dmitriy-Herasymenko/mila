@@ -43,11 +43,11 @@ export function Services() {
                   className="rounded-[var(--radius-buttons)] px-3 py-2 text-[16px] transition-colors"
                   style={{
                     backgroundColor: active === i ? "var(--color-accent)" : "transparent",
-                    color: "var(--color-warm-cream)",
+                    color: active === i ? "var(--color-espresso)" : "var(--color-warm-cream)",
                     fontWeight: active === i ? 500 : 400,
                   }}
                 >
-                  <span style={{ color: active === i ? "rgba(255,241,224,0.7)" : "var(--color-driftwood)" }}>
+                  <span style={{ color: active === i ? "rgba(35,24,21,0.65)" : "var(--color-driftwood)" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>{" "}
                   {item.title}

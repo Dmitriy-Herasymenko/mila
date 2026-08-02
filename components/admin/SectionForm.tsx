@@ -51,7 +51,7 @@ export function SectionForm({
             className="rounded-[var(--radius-buttons)] px-4 py-2 text-[14px]"
             style={{
               backgroundColor: locale === loc ? "var(--color-accent)" : "transparent",
-              color: "var(--color-warm-cream)",
+              color: locale === loc ? "var(--color-espresso)" : "var(--color-warm-cream)",
               border: locale === loc ? "none" : "1px solid var(--color-warm-cream)",
             }}
           >

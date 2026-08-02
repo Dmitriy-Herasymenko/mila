@@ -38,7 +38,7 @@ export function Stats() {
                 <div
                   className="font-display inline-block text-[36px] md:text-[42px]"
                   style={{
-                    color: "var(--color-warm-cream)",
+                    color: isFeatured ? "var(--color-espresso)" : "var(--color-warm-cream)",
                     backgroundColor: isFeatured ? "var(--color-accent)" : "transparent",
                     borderRadius: isFeatured ? "6px" : undefined,
                     padding: isFeatured ? "0 6px" : undefined,
