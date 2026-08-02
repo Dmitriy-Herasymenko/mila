@@ -12,19 +12,19 @@ export function Stats() {
   const items = t.raw("items") as StatItem[];
 
   return (
-    <section className="section-gap" style={{ backgroundColor: "var(--color-fog-gray)" }}>
+    <section className="section-gap" style={{ backgroundColor: "var(--color-midnight-cocoa)" }}>
       <div className="container-page">
         <div className="max-w-2xl">
           <Reveal>
             <h2
-              className="font-display text-[32px] md:text-[42px]"
-              style={{ color: "var(--color-ink-black)" }}
+              className="font-display text-[28px] md:text-[35px]"
+              style={{ color: "var(--color-warm-cream)", letterSpacing: "-0.02em" }}
             >
               {t("title")}
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="mt-4 text-[17px]" style={{ color: "var(--color-ink-black)" }}>
+            <p className="mt-4 text-[17px]" style={{ color: "var(--color-warm-cream)" }}>
               {t("subtitle")}
             </p>
           </Reveal>
@@ -34,16 +34,11 @@ export function Stats() {
           {items.map((item, i) => {
             const isFeatured = i === items.length - 1;
             return (
-              <motion.div
-                key={item.label}
-                variants={revealItem}
-                className="bg-[var(--color-paper-white)] p-[16px]"
-                style={{ borderRadius: "var(--radius-cards)" }}
-              >
+              <motion.div key={item.label} variants={revealItem} className="hairline-card p-[16px]">
                 <div
                   className="font-display inline-block text-[36px] md:text-[42px]"
                   style={{
-                    color: isFeatured ? "#ffffff" : "var(--color-ink-black)",
+                    color: "var(--color-warm-cream)",
                     backgroundColor: isFeatured ? "var(--color-accent)" : "transparent",
                     borderRadius: isFeatured ? "6px" : undefined,
                     padding: isFeatured ? "0 6px" : undefined,
@@ -51,7 +46,7 @@ export function Stats() {
                 >
                   <Counter value={item.value} suffix={item.suffix} />
                 </div>
-                <div className="mt-2 text-[14px]" style={{ color: "var(--color-ash-gray)" }}>
+                <div className="mt-2 text-[14px]" style={{ color: "var(--color-driftwood)" }}>
                   {item.label}
                 </div>
               </motion.div>

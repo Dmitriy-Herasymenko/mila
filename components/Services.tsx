@@ -15,19 +15,19 @@ export function Services() {
   const [active, setActive] = useState(0);
 
   return (
-    <section id="services" className="section-gap" style={{ backgroundColor: "var(--color-paper-white)" }}>
+    <section id="services" className="section-gap" style={{ backgroundColor: "var(--color-espresso)" }}>
       <div className="container-page">
         <div className="max-w-2xl">
           <Reveal>
             <h2
-              className="font-display text-[32px] md:text-[42px]"
-              style={{ color: "var(--color-ink-black)" }}
+              className="font-display text-[28px] md:text-[35px]"
+              style={{ color: "var(--color-warm-cream)", letterSpacing: "-0.02em" }}
             >
               {t("title")}
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="mt-4 text-[17px]" style={{ color: "var(--color-ink-black)" }}>
+            <p className="mt-4 text-[17px]" style={{ color: "var(--color-warm-cream)" }}>
               {t("subtitle")}
             </p>
           </Reveal>
@@ -43,17 +43,17 @@ export function Services() {
                   className="rounded-[var(--radius-buttons)] px-3 py-2 text-[16px] transition-colors"
                   style={{
                     backgroundColor: active === i ? "var(--color-accent)" : "transparent",
-                    color: active === i ? "#ffffff" : "var(--color-ink-black)",
+                    color: "var(--color-warm-cream)",
                     fontWeight: active === i ? 500 : 400,
                   }}
                 >
-                  <span style={{ color: active === i ? "rgba(255,255,255,0.75)" : "var(--color-ash-gray)" }}>
+                  <span style={{ color: active === i ? "rgba(255,241,224,0.7)" : "var(--color-driftwood)" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>{" "}
                   {item.title}
                 </button>
                 {i < items.length - 1 && (
-                  <span aria-hidden style={{ color: "var(--color-ash-gray)" }}>
+                  <span aria-hidden style={{ color: "var(--color-driftwood)" }}>
                     /
                   </span>
                 )}
@@ -63,11 +63,11 @@ export function Services() {
 
           <div
             className="mt-6"
-            style={{ height: 2, backgroundColor: "var(--color-fog-gray)" }}
+            style={{ height: 2, backgroundColor: "var(--color-midnight-cocoa)" }}
           >
             <motion.div
               className="h-full"
-              style={{ backgroundColor: "var(--color-ink-black)" }}
+              style={{ backgroundColor: "var(--color-warm-cream)" }}
               animate={{ width: `${((active + 1) / items.length) * 100}%` }}
               transition={{ duration: 0.4, ease: easeApple }}
             />
@@ -82,22 +82,22 @@ export function Services() {
                 exit={{ opacity: 0, x: -16 }}
                 transition={{ duration: 0.35, ease: easeApple }}
                 className="p-[24px]"
-                style={{ backgroundColor: "var(--color-fog-gray)", borderRadius: "var(--radius-cards)" }}
+                style={{ backgroundColor: "var(--color-midnight-cocoa)", borderRadius: "var(--radius-cards)" }}
               >
                 <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <h3
                     className="text-[24px]"
-                    style={{ color: "var(--color-ink-black)", fontWeight: 500 }}
+                    style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}
                   >
                     {items[active].title}
                   </h3>
-                  <span className="text-[14px] shrink-0" style={{ color: "var(--color-ash-gray)" }}>
+                  <span className="text-[14px] shrink-0" style={{ color: "var(--color-driftwood)" }}>
                     {String(active + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
                   </span>
                 </div>
                 <p
                   className="mt-4 max-w-2xl text-[17px] leading-[1.5]"
-                  style={{ color: "var(--color-ink-black)" }}
+                  style={{ color: "var(--color-warm-cream)" }}
                 >
                   {items[active].description}
                 </p>

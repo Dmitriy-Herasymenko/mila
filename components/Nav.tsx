@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { LocaleSwitch } from "./LocaleSwitch";
 import { Logo } from "./Logo";
@@ -18,11 +18,22 @@ const links = [
 export function Nav() {
   const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <header
-      className="sticky top-0 z-50"
-      style={{ backgroundColor: "var(--color-paper-white)" }}
+      className="fixed inset-x-0 top-0 z-50 transition-colors duration-300"
+      style={{
+        backgroundColor: scrolled ? "var(--color-espresso)" : "transparent",
+        borderBottom: scrolled ? "1px solid var(--color-walnut)" : "1px solid transparent",
+      }}
     >
       <div className="container-page flex items-center justify-between py-5">
         <Link href="/">
@@ -47,8 +58,8 @@ export function Nav() {
         <button
           aria-label={open ? t("close") : t("menu")}
           onClick={() => setOpen((v) => !v)}
-          className="rounded-[var(--radius-nav)] px-4 py-2 text-sm md:hidden"
-          style={{ border: "1px solid var(--color-ink-black)" }}
+          className="rounded-[var(--radius-buttons)] px-4 py-2 text-sm md:hidden"
+          style={{ border: "1px solid var(--color-warm-cream)", color: "var(--color-warm-cream)" }}
         >
           {open ? t("close") : `${t("menu")} ≡`}
         </button>
@@ -62,7 +73,7 @@ export function Nav() {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="overflow-hidden md:hidden"
-            style={{ borderTop: "1px solid var(--color-ink-black)" }}
+            style={{ backgroundColor: "var(--color-espresso)", borderTop: "1px solid var(--color-walnut)" }}
           >
             <div className="container-page flex flex-col gap-1 py-4">
               {links.map((link) => (

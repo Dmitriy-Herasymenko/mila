@@ -2,7 +2,9 @@ import { setRequestLocale } from "next-intl/server";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
 import { Faq } from "@/components/Faq";
+import { Fit } from "@/components/Fit";
 import { Footer } from "@/components/Footer";
+import { Formats } from "@/components/Formats";
 import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
 import { Process } from "@/components/Process";
@@ -26,6 +28,8 @@ export default async function HomePage({
       <Stats />
       <Work />
       <Services />
+      <Fit />
+      <Formats />
       <Process />
       <Faq />
       <Contact />

@@ -56,20 +56,20 @@ export function Work() {
   }
 
   return (
-    <section id="work" className="section-gap" style={{ backgroundColor: "var(--color-paper-white)" }}>
+    <section id="work" className="section-gap" style={{ backgroundColor: "var(--color-espresso)" }}>
       <div className="container-page">
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <Reveal>
               <h2
-                className="font-display text-[32px] md:text-[42px]"
-                style={{ color: "var(--color-ink-black)" }}
+                className="font-display text-[28px] md:text-[35px]"
+                style={{ color: "var(--color-warm-cream)", letterSpacing: "-0.02em" }}
               >
                 {t("title")}
               </h2>
             </Reveal>
             <Reveal delay={0.05}>
-              <p className="mt-4 text-[17px]" style={{ color: "var(--color-ink-black)" }}>
+              <p className="mt-4 text-[17px]" style={{ color: "var(--color-warm-cream)" }}>
                 {t("subtitle")}
               </p>
             </Reveal>
@@ -82,7 +82,7 @@ export function Work() {
                 onClick={() => scrollToIndex(index - 1)}
                 disabled={index === 0}
                 className="flex h-11 w-11 items-center justify-center rounded-full text-lg disabled:opacity-30"
-                style={{ border: "1px solid var(--color-ink-black)", color: "var(--color-ink-black)" }}
+                style={{ border: "1px solid var(--color-warm-cream)", color: "var(--color-warm-cream)" }}
               >
                 ←
               </button>
@@ -91,7 +91,7 @@ export function Work() {
                 onClick={() => scrollToIndex(index + 1)}
                 disabled={index === items.length - 1}
                 className="flex h-11 w-11 items-center justify-center rounded-full text-lg disabled:opacity-30"
-                style={{ border: "1px solid var(--color-ink-black)", color: "var(--color-ink-black)" }}
+                style={{ border: "1px solid var(--color-warm-cream)", color: "var(--color-warm-cream)" }}
               >
                 →
               </button>
@@ -112,9 +112,13 @@ export function Work() {
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                 className="w-[80%] shrink-0 overflow-hidden sm:w-[360px]"
-                style={{ backgroundColor: "var(--color-fog-gray)", borderRadius: "var(--radius-cards)", scrollSnapAlign: "start" }}
+                style={{
+                  border: "1px solid var(--color-walnut)",
+                  borderRadius: "var(--radius-cards)",
+                  scrollSnapAlign: "start",
+                }}
               >
-                <div className="relative aspect-[4/3] w-full" style={{ backgroundColor: "var(--color-ash-gray)" }}>
+                <div className="relative aspect-[4/3] w-full" style={{ backgroundColor: "var(--color-driftwood)" }}>
                   <Image
                     src={CASE_IMAGES[i % CASE_IMAGES.length]}
                     alt={item.title}
@@ -124,21 +128,21 @@ export function Work() {
                   />
                 </div>
                 <div className="p-[16px]">
-                  <span className="text-[14px]" style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>
+                  <span className="text-[14px]" style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}>
                     {item.tag}
                   </span>
                   <h3
                     className="mt-3 text-[20px] leading-tight"
-                    style={{ color: "var(--color-ink-black)", fontWeight: 500 }}
+                    style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}
                   >
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-[16px]" style={{ color: "var(--color-ink-black)" }}>
+                  <p className="mt-3 text-[16px]" style={{ color: "var(--color-warm-cream)" }}>
                     {item.description}
                   </p>
                   <div
                     className="font-display mt-5 text-[24px]"
-                    style={{ color: "var(--color-ink-black)" }}
+                    style={{ color: "var(--color-warm-cream)" }}
                   >
                     {item.metric}
                   </div>
@@ -157,7 +161,7 @@ export function Work() {
               className="h-1.5 rounded-full transition-all"
               style={{
                 width: i === index ? 24 : 8,
-                backgroundColor: "var(--color-ink-black)",
+                backgroundColor: "var(--color-warm-cream)",
                 opacity: i === index ? 1 : 0.25,
               }}
             />

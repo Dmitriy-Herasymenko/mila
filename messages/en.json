@@ -128,6 +128,58 @@
       }
     ]
   },
+  "fit": {
+    "title": "Who this is for — and who it isn't",
+    "subtitle": "An honest look at who this collaboration works well for, and who it doesn't.",
+    "fitLabel": "Good fit if",
+    "notFitLabel": "Not a fit if",
+    "fitItems": [
+      "You have an ad budget of at least $1,000/month and room to scale it",
+      "You need systematic growth over several months, not a one-off project",
+      "You're ready to test hypotheses, trust data, and decide quickly",
+      "You want less personal involvement in day-to-day marketing operations",
+      "You have basic analytics in place, or are ready to set it up from scratch"
+    ],
+    "notFitItems": [
+      "You need an executor for small one-off tasks with no strategy",
+      "You have no budget for paid ads — organic channels only",
+      "You expect guaranteed results within the first week",
+      "Your product hasn't found product-market fit yet",
+      "You're not willing to share access to analytics and ad accounts"
+    ]
+  },
+  "formats": {
+    "eyebrow": "Formats",
+    "title": "Ways to work together",
+    "subtitle": "Three formats to choose from, depending on what you actually need.",
+    "tableHeaders": ["Format", "Best for", "Outcome"],
+    "items": [
+      {
+        "format": "Consultation",
+        "audience": "You have a specific question",
+        "result": "A decision and a plan for next steps"
+      },
+      {
+        "format": "Marketing audit",
+        "audience": "You need a full diagnostic",
+        "result": "An audit and a 30–90 day roadmap"
+      },
+      {
+        "format": "Fractional CMO",
+        "audience": "You need ongoing management",
+        "result": "Strategy, team, KPIs, and execution oversight"
+      }
+    ],
+    "cmoDetailsTitle": "Fractional CMO in detail",
+    "cmoDetails": [
+      { "label": "Minimum engagement length", "value": "3 months" },
+      { "label": "Number of meetings", "value": "2 strategic calls/month + weekly syncs" },
+      { "label": "Time commitment", "value": "~15–20 hours per week" },
+      { "label": "Operational management", "value": "Yes, including managing contractors" },
+      { "label": "Working with your team", "value": "Yes, training and execution oversight" },
+      { "label": "Starting price", "value": "from $2,500 per month" }
+    ]
+  },
   "process": {
     "eyebrow": "Process",
     "title": "How a project comes together",

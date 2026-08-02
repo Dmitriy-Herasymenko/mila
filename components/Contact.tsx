@@ -44,43 +44,32 @@ export function Contact() {
     <section
       id="contact"
       className="section-gap relative overflow-hidden"
-      style={{ backgroundColor: "var(--color-paper-white)" }}
+      style={{ backgroundColor: "var(--color-espresso)" }}
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -left-24 top-10 h-[320px] w-[320px] rounded-full opacity-70 blur-3xl"
-        style={{ background: "radial-gradient(circle, rgba(10,132,255,0.18) 0%, rgba(10,132,255,0) 70%)" }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-16 bottom-0 h-[360px] w-[360px] rounded-full opacity-70 blur-3xl"
-        style={{ background: "radial-gradient(circle, rgba(163,163,163,0.3) 0%, rgba(163,163,163,0) 70%)" }}
-      />
-
       <div className="container-page relative grid grid-cols-1 gap-14 md:grid-cols-[1fr_1.2fr]">
         <div>
           <Reveal>
             <h2
-              className="font-display text-[32px] md:text-[42px]"
-              style={{ color: "var(--color-ink-black)" }}
+              className="font-display text-[28px] md:text-[35px]"
+              style={{ color: "var(--color-warm-cream)", letterSpacing: "-0.02em" }}
             >
               {t("title")}
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="mt-4 max-w-sm text-[17px]" style={{ color: "var(--color-ink-black)" }}>
+            <p className="mt-4 max-w-sm text-[17px]" style={{ color: "var(--color-warm-cream)" }}>
               {t("subtitle")}
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-8">
-              <div className="text-[14px]" style={{ color: "var(--color-ash-gray)" }}>
+              <div className="text-[14px]" style={{ color: "var(--color-driftwood)" }}>
                 {t("directLabel")}
               </div>
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
                 className="font-display mt-1 inline-block text-[20px]"
-                style={{ color: "var(--color-ink-black)" }}
+                style={{ color: "var(--color-warm-cream)" }}
               >
                 {CONTACT_EMAIL}
               </a>
@@ -91,35 +80,35 @@ export function Contact() {
         <Reveal delay={0.1}>
           <form
             onSubmit={handleSubmit}
-            className="glass-card grid grid-cols-1 gap-5 p-[24px] sm:grid-cols-2 md:p-[32px]"
+            className="hairline-card grid grid-cols-1 gap-5 p-[24px] sm:grid-cols-2 md:p-[32px]"
           >
             <label className="flex flex-col gap-2 text-[14px] sm:col-span-1">
-              <span style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>{tf("name")}</span>
+              <span style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}>{tf("name")}</span>
               <input
                 required
                 name="name"
                 placeholder={tf("namePlaceholder")}
-                className="glass-input px-[12px] py-[10px] text-[16px]"
+                className="pill-input px-[16px] py-[12px] text-[14px]"
               />
             </label>
 
             <label className="flex flex-col gap-2 text-[14px] sm:col-span-1">
-              <span style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>{tf("email")}</span>
+              <span style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}>{tf("email")}</span>
               <input
                 required
                 type="email"
                 name="email"
                 placeholder={tf("emailPlaceholder")}
-                className="glass-input px-[12px] py-[10px] text-[16px]"
+                className="pill-input px-[16px] py-[12px] text-[14px]"
               />
             </label>
 
             <label className="flex flex-col gap-2 text-[14px] sm:col-span-2">
-              <span style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>{tf("budget")}</span>
+              <span style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}>{tf("budget")}</span>
               <select
                 name="budget"
                 defaultValue=""
-                className="glass-input px-[12px] py-[10px] text-[16px]"
+                className="pill-input px-[16px] py-[12px] text-[14px]"
               >
                 <option value="" disabled>
                   {tf("budgetPlaceholder")}
@@ -133,13 +122,14 @@ export function Contact() {
             </label>
 
             <label className="flex flex-col gap-2 text-[14px] sm:col-span-2">
-              <span style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>{tf("message")}</span>
+              <span style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}>{tf("message")}</span>
               <textarea
                 required
                 name="message"
                 rows={5}
                 placeholder={tf("messagePlaceholder")}
-                className="glass-input resize-none px-[12px] py-[10px] text-[16px]"
+                className="pill-input resize-none px-[16px] py-[12px] text-[14px]"
+                style={{ borderRadius: "var(--radius-cards)" }}
               />
             </label>
 
@@ -162,7 +152,7 @@ export function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
                     className="text-[14px]"
-                    style={{ color: "var(--color-ink-black)", fontWeight: 500 }}
+                    style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}
                   >
                     {tf("success")}
                   </motion.p>
@@ -174,7 +164,7 @@ export function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0 }}
                     className="text-[14px]"
-                    style={{ color: "var(--color-ink-black)", fontWeight: 500 }}
+                    style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}
                   >
                     {tf("error")}
                   </motion.p>

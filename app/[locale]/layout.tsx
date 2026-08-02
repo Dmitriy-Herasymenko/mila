@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { routing } from "@/i18n/routing";
+import { getContentOverridesForLocale } from "@/lib/db";
 import { inter } from "../fonts";
 import "../globals.css";
 
@@ -72,6 +73,8 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const overrides = await getContentOverridesForLocale(locale as "uk" | "en");
+  const mergedMessages = { ...messages, ...overrides };
   const t = await getTranslations({ locale, namespace: "meta" });
 
   const jsonLd = {
@@ -95,7 +98,7 @@ export default async function LocaleLayout({
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={mergedMessages}>
           {children}
         </NextIntlClientProvider>
       </body>

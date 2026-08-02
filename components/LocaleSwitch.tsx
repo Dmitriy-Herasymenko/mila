@@ -13,11 +13,11 @@ export function LocaleSwitch({ className }: { className?: string }) {
   return (
     <button
       onClick={() => router.replace(pathname, { locale: otherLocale })}
-      className={`inline-flex items-center gap-1 rounded-[var(--radius-nav)] px-3 py-2 text-sm ${className ?? ""}`}
+      className={`inline-flex items-center gap-1 rounded-[var(--radius-buttons)] px-3 py-2 text-sm ${className ?? ""}`}
       style={{
-        border: "1px solid var(--color-ink-black)",
-        color: "var(--color-ink-black)",
-        backgroundColor: "var(--color-paper-white)",
+        border: "1px solid var(--color-warm-cream)",
+        color: "var(--color-warm-cream)",
+        backgroundColor: "var(--color-espresso)",
       }}
       aria-label={`Switch language to ${otherLocale.toUpperCase()}`}
     >

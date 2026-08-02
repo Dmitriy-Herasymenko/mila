@@ -21,15 +21,15 @@ export default async function Image({ params }: { params: { locale: string } }) 
           alignItems: "center",
           justifyContent: "space-between",
           padding: "80px",
-          backgroundColor: "#ffffff",
+          backgroundColor: "#140b00",
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 640 }}>
-          <div style={{ fontSize: 22, color: "#1a1a1a", display: "flex" }}>Mila Patramanska</div>
+          <div style={{ fontSize: 22, color: "#fff1e0", display: "flex" }}>Mila Patramanska</div>
           <div
             style={{
               fontSize: 48,
-              color: "#1a1a1a",
+              color: "#fff1e0",
               marginTop: 24,
               display: "flex",
               letterSpacing: "-0.03em",
@@ -41,10 +41,10 @@ export default async function Image({ params }: { params: { locale: string } }) 
             style={{
               marginTop: 32,
               display: "flex",
-              backgroundColor: "#0a84ff",
+              backgroundColor: "#ffb442",
               padding: "8px 16px",
               fontSize: 22,
-              color: "#ffffff",
+              color: "#fff1e0",
               width: "fit-content",
             }}
           >
@@ -55,7 +55,7 @@ export default async function Image({ params }: { params: { locale: string } }) 
           src={photoSrc}
           width={340}
           height={425}
-          style={{ objectFit: "cover", borderRadius: 16 }}
+          style={{ objectFit: "cover", borderRadius: 6 }}
         />
       </div>
     ),

@@ -11,12 +11,12 @@ export function About() {
   const highlights = t.raw("highlights") as { label: string; value: string }[];
 
   return (
-    <section id="about" className="section-gap" style={{ backgroundColor: "var(--color-paper-white)" }}>
+    <section id="about" className="section-gap" style={{ backgroundColor: "var(--color-espresso)" }}>
       <div className="container-page grid grid-cols-1 gap-16 md:grid-cols-[1fr_1fr] md:items-center">
         <Reveal>
           <div
             className="relative aspect-[4/5] w-full max-w-md overflow-hidden"
-            style={{ backgroundColor: "var(--color-fog-gray)", borderRadius: "var(--radius-cards)" }}
+            style={{ border: "1px solid var(--color-walnut)", borderRadius: "var(--radius-cards)" }}
           >
             <Image
               src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80"
@@ -31,8 +31,8 @@ export function About() {
         <div>
           <Reveal>
             <h2
-              className="font-display text-[32px] md:text-[42px]"
-              style={{ color: "var(--color-ink-black)" }}
+              className="font-display text-[28px] md:text-[35px]"
+              style={{ color: "var(--color-warm-cream)", letterSpacing: "-0.02em" }}
             >
               {t("title")}
             </h2>
@@ -41,7 +41,7 @@ export function About() {
           <div className="mt-6 space-y-4">
             {paragraphs.map((p, i) => (
               <Reveal key={i} delay={0.05 + i * 0.05}>
-                <p className="text-[17px]" style={{ color: "var(--color-ink-black)" }}>
+                <p className="text-[17px]" style={{ color: "var(--color-warm-cream)" }}>
                   {p}
                 </p>
               </Reveal>
@@ -50,16 +50,11 @@ export function About() {
 
           <RevealGroup className="mt-8 grid grid-cols-2 gap-3">
             {highlights.map((h) => (
-              <motion.div
-                key={h.label}
-                variants={revealItem}
-                className="p-[16px]"
-                style={{ backgroundColor: "var(--color-fog-gray)", borderRadius: "var(--radius-cards)" }}
-              >
-                <div className="text-[24px]" style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>
+              <motion.div key={h.label} variants={revealItem} className="hairline-card p-[16px]">
+                <div className="text-[24px]" style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}>
                   {h.value}
                 </div>
-                <div className="mt-1 text-[14px]" style={{ color: "var(--color-ash-gray)" }}>
+                <div className="mt-1 text-[14px]" style={{ color: "var(--color-driftwood)" }}>
                   {h.label}
                 </div>
               </motion.div>

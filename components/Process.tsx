@@ -21,21 +21,17 @@ function StepCard({ step, align }: { step: Step; align: "left" | "right" }) {
       }`}
     >
       <div
-        className="glass-orb flex h-11 w-11 shrink-0 items-center justify-center text-[16px]"
-        style={{ color: "var(--color-ink-black)", fontWeight: 500 }}
+        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[16px]"
+        style={{ border: "1px solid var(--color-walnut)", color: "var(--color-warm-cream)", fontWeight: 500 }}
       >
         {step.number}
       </div>
 
-      <motion.div
-        whileHover={{ y: -3 }}
-        transition={{ duration: 0.25, ease: easeApple }}
-        className="glass-card w-full p-[24px]"
-      >
-        <h3 className="text-[20px]" style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>
+      <motion.div whileHover={{ y: -3 }} transition={{ duration: 0.25, ease: easeApple }} className="hairline-card w-full p-[24px]">
+        <h3 className="text-[20px]" style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}>
           {step.title}
         </h3>
-        <p className="mt-3 text-[16px] leading-[1.4]" style={{ color: "var(--color-ink-black)" }}>
+        <p className="mt-3 text-[16px] leading-[1.4]" style={{ color: "var(--color-driftwood)" }}>
           {step.description}
         </p>
       </motion.div>
@@ -43,7 +39,7 @@ function StepCard({ step, align }: { step: Step; align: "left" | "right" }) {
   );
 }
 
-function GlassFiller({ align }: { align: "left" | "right" }) {
+function RingFiller({ align }: { align: "left" | "right" }) {
   return (
     <motion.div
       aria-hidden
@@ -55,14 +51,15 @@ function GlassFiller({ align }: { align: "left" | "right" }) {
         align === "left" ? "md:justify-end" : "md:justify-start"
       }`}
     >
-      <div className="glass-orb h-[190px] w-[190px]" />
+      <div className="h-[170px] w-[170px] rounded-full" style={{ border: "1px solid var(--color-walnut)" }} />
       <div
-        className="glass-orb absolute h-[90px] w-[90px]"
+        className="absolute h-[80px] w-[80px] rounded-full"
         style={{
+          border: "1px solid var(--color-accent)",
           top: align === "left" ? "auto" : 8,
           bottom: align === "left" ? 8 : "auto",
-          left: align === "left" ? "10%" : "auto",
-          right: align === "left" ? "auto" : "10%",
+          left: align === "left" ? "12%" : "auto",
+          right: align === "left" ? "auto" : "12%",
         }}
       />
     </motion.div>
@@ -77,11 +74,11 @@ function StepRow({ step, index }: { step: Step; index: number }) {
       {isLeft ? (
         <>
           <StepCard step={step} align="left" />
-          <GlassFiller align="right" />
+          <RingFiller align="right" />
         </>
       ) : (
         <>
-          <GlassFiller align="left" />
+          <RingFiller align="left" />
           <StepCard step={step} align="right" />
         </>
       )}
@@ -102,18 +99,21 @@ export function Process() {
   return (
     <section
       id="process"
-      className="relative overflow-hidden pb-[48px] pt-[24px] md:pb-[96px] md:pt-[32px]"
-      style={{ backgroundColor: "var(--color-fog-gray)" }}
+      className="relative overflow-hidden pb-[40px] pt-[24px] md:pb-[52px] md:pt-[32px]"
+      style={{ backgroundColor: "var(--color-midnight-cocoa)" }}
     >
       <div className="container-page relative">
         <div className="max-w-2xl">
           <Reveal>
-            <h2 className="font-display text-[32px] md:text-[42px]" style={{ color: "var(--color-ink-black)" }}>
+            <h2
+              className="font-display text-[28px] md:text-[35px]"
+              style={{ color: "var(--color-warm-cream)", letterSpacing: "-0.02em" }}
+            >
               {t("title")}
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="mt-4 text-[17px]" style={{ color: "var(--color-ink-black)" }}>
+            <p className="mt-4 text-[16px]" style={{ color: "var(--color-driftwood)" }}>
               {t("subtitle")}
             </p>
           </Reveal>
@@ -122,16 +122,12 @@ export function Process() {
         <div ref={sectionRef} className="relative mt-12">
           <div
             aria-hidden
-            className="absolute left-1/2 top-0 hidden h-full w-[3px] -translate-x-1/2 rounded-full md:block"
-            style={{ backgroundColor: "var(--color-ash-gray)", opacity: 0.35 }}
+            className="absolute left-1/2 top-0 hidden h-full w-[1px] -translate-x-1/2 md:block"
+            style={{ backgroundColor: "var(--color-walnut)" }}
           >
             <motion.div
-              className="w-full rounded-full"
-              style={{
-                height: lineHeight,
-                background:
-                  "linear-gradient(180deg, var(--color-ink-black) 0%, var(--color-accent) 50%, var(--color-ink-black) 100%)",
-              }}
+              className="w-full"
+              style={{ height: lineHeight, backgroundColor: "var(--color-accent)" }}
             />
           </div>
 

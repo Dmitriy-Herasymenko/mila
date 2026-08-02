@@ -1,4 +1,6 @@
-export function Logo({ className }: { className?: string }) {
+export function Logo({ className, color }: { className?: string; color?: string }) {
+  const fill = color ?? "var(--color-warm-cream)";
+
   return (
     <span className={`inline-flex items-center gap-2 ${className ?? ""}`}>
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -9,7 +11,7 @@ export function Logo({ className }: { className?: string }) {
           height="12"
           rx="2"
           transform="rotate(15 8 8)"
-          fill="var(--color-ink-black)"
+          fill={fill}
         />
         <rect
           x="10"
@@ -18,13 +20,10 @@ export function Logo({ className }: { className?: string }) {
           height="12"
           rx="2"
           transform="rotate(15 16 16)"
-          fill="var(--color-ink-black)"
+          fill={fill}
         />
       </svg>
-      <span
-        className="text-[20px]"
-        style={{ color: "var(--color-ink-black)", letterSpacing: "-0.03em" }}
-      >
+      <span className="text-[20px]" style={{ color: fill, letterSpacing: "-0.03em" }}>
         Mila Patramanska
       </span>
     </span>

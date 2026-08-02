@@ -13,19 +13,19 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="section-gap" style={{ backgroundColor: "var(--color-fog-gray)" }}>
+    <section id="faq" className="section-gap" style={{ backgroundColor: "var(--color-warm-cream)" }}>
       <div className="container-page max-w-3xl">
         <div>
           <Reveal>
             <h2
-              className="font-display text-[32px] md:text-[42px]"
-              style={{ color: "var(--color-ink-black)" }}
+              className="font-display text-[28px] md:text-[35px]"
+              style={{ color: "var(--color-espresso)", letterSpacing: "-0.02em" }}
             >
               {t("title")}
             </h2>
           </Reveal>
           <Reveal delay={0.05}>
-            <p className="mt-4 text-[17px]" style={{ color: "var(--color-ink-black)" }}>
+            <p className="mt-4 text-[16px]" style={{ color: "var(--color-espresso)", opacity: 0.65 }}>
               {t("subtitle")}
             </p>
           </Reveal>
@@ -38,26 +38,21 @@ export function Faq() {
               <motion.div
                 key={item.question}
                 variants={revealItem}
-                className="overflow-hidden"
-                style={{
-                  backgroundColor: "var(--color-paper-white)",
-                  borderRadius: "var(--radius-cards)",
-                  marginBottom: 12,
-                }}
+                style={{ borderBottom: "1px solid var(--color-walnut)" }}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between gap-4 px-[16px] py-[16px] text-left"
+                  className="flex w-full items-center justify-between gap-4 py-[14px] text-left"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-[16px]" style={{ color: "var(--color-ink-black)", fontWeight: 500 }}>
+                  <span className="text-[17px]" style={{ color: "var(--color-espresso)", fontWeight: 500 }}>
                     {item.question}
                   </span>
                   <motion.span
                     animate={{ rotate: isOpen ? 45 : 0 }}
                     transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                    className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-xl"
-                    style={{ border: "1px solid var(--color-ink-black)", color: "var(--color-ink-black)" }}
+                    className="shrink-0 text-xl"
+                    style={{ color: "var(--color-espresso)" }}
                   >
                     +
                   </motion.span>
@@ -71,7 +66,7 @@ export function Faq() {
                       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                       className="overflow-hidden"
                     >
-                      <p className="px-[16px] pb-[16px] text-[16px]" style={{ color: "var(--color-ink-black)" }}>
+                      <p className="pb-[14px] text-[16px]" style={{ color: "var(--color-espresso)", opacity: 0.7 }}>
                         {item.answer}
                       </p>
                     </motion.div>

@@ -1,49 +1,51 @@
-# Programa — Style Reference
-> Swiss design studio at high noon. A white gallery wall lit by a single yellow desk lamp — everything is grayscale until a button, badge, or highlight demands attention, and then that one yellow note carries the whole room.
+# Abetterlou — Style Reference
+> Embers on saddle leather — warm cream typography glowing against deep coffee-black, with amber-gold buttons that feel pressed into the page like heated metalwork.
 
-**Theme:** light
+**Theme:** dark
 
-Programa operates in a Swiss-design vocabulary: near-pure white canvas, architectural sans-serif type at tightly tracked small-to-medium sizes, hairline borders, and a single saturated yellow-green accent that functions as a highlighter pen across an otherwise austere page. The entire palette is essentially four grays plus one chromatic signal — chromatic real estate is rationed, not distributed, so when yellow appears it reads as a switch flipped on. Components are slim and confident: 10px radii, thin 1px borders, generous white space, and zero shadow noise. The aesthetic is editorial-portfolio meets productivity tool — restrained enough to feel serious, bold enough to feel like a designer's tool.
+A warm dark 'private clinic at dusk' system: coffee-black canvas (#140b00), cream typography (#fff1e0), and a single amber accent (#ffb442) that fires only on action. PP Neue Montreal carries the entire voice at weights 400 and 500 — geometric and clinical, but the cream ink and tight negative tracking on the 43–81px range give it editorial weight rather than generic SaaS feel. The defining rhythm is a shape contrast: full-pill controls (buttons, inputs, links at ~1296px radius) sit on gently squared 6px surfaces, so action elements feel pressed-in and tactile while content cards stay quiet. Restraint is the system: one chromatic accent, two font weights, compact 12px gaps, and 52px section breath that reads premium without becoming airy.
 
 ## Tokens — Colors
 
 | Name | Value | Token | Role |
 |------|-------|-------|------|
-| Ink Black | `#1a1a1a` | `--color-ink-black` | Primary text, all borders, icon strokes, logo, divider lines, button outlines — the structural ink that defines every shape on the page |
-| Paper White | `#ffffff` | `--color-paper-white` | Page canvas, card surfaces, text on dark fills, input fields |
-| Fog Gray | `#f4f4f4` | `--color-fog-gray` | Soft section background, alternate surface, and quiet card fill |
-| Ash Gray | `#a3a3a3` | `--color-ash-gray` | Muted secondary text, inactive links, placeholder copy, tertiary metadata |
-| Highlighter Yellow | `#fbff2b` | `--color-highlighter-yellow` | Primary action background, focus highlights, tag fills — the single chromatic accent that makes interactive elements feel switched on against the monochrome system |
+| Espresso | `#140b00` | `--color-espresso` | Page canvas and primary surface — warm coffee-black rather than pure black, the entire site sits on this |
+| Midnight Cocoa | `#0b0600` | `--color-midnight-cocoa` | Deepest surface for footers and recessed bands — almost-black brown for slight layering below Espresso |
+| Warm Cream | `#fff1e0` | `--color-warm-cream` | Primary text and icon strokes — the only ink color across the system, reads as off-white parchment in dark contexts |
+| Soft Cream | `#f1f1f1` | `--color-soft-cream` | Occasional light surface tint where near-white is needed (rare, secondary to Warm Cream) |
+| Walnut | `#43392d` | `--color-walnut` | Subtle hairline borders on dark surfaces — warm taupe that holds edges without competing with content |
+| Cedar | `#4f4538` | `--color-cedar` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Driftwood | `#85796c` | `--color-driftwood` | Muted helper text and secondary labels — warm gray that recedes against Espresso without disappearing |
+| Burnt Edge | `#181109` | `--color-burnt-edge` | Faint internal border on cards and panels — barely-visible depth line on the dark canvas |
+| Amber Forge | `#ffb442` | `--color-amber-forge` | Primary action fill, accent highlights, and the system signal color — the only chromatic accent; appears on filled CTAs, icon hover states, and section dividers. Pairs against Espresso for a heated-metal contrast that feels pressed-in and intentional |
 
 ## Tokens — Typography
 
-### Neue Haas Grotesk Text — The single typeface carries every voice on the site — nav, body, headings, buttons, inputs. Weight 400 is the default for body and nav; weight 500 is reserved for emphasized inline labels (e.g. 'Last Updated:') and section opens. The choice of a neo-grotesque with consistent -0.03em tracking at every size creates optical tightness even at 42px, avoiding the airy looseness most sans-serifs default to. This is a Swiss-tool typeface, not a personality typeface — restraint is the signature. · `--font-neue-haas-grotesk-text`
-- **Substitute:** Inter, Neue Haas Grotesk Display Pro (if available), or Helvetica Neue
+### PP Neue Montreal — Sole typeface across the entire system. PP Neue Montreal is a geometric humanist sans with a soft, slightly rounded terminal — more editorial than Inter, more clinical than GT America. Used at weight 400 for body and 500 for emphasis; no weight 600+ anywhere, which keeps the voice restrained and high-end. Display sizes (43–81px) use tight negative tracking (down to -1.13px) to lock letters into compact editorial blocks. Substitute with Inter (close) or Manrope (slightly warmer). · `--font-pp-neue-montreal`
+- **Substitute:** Inter (close), Manrope (warmer alternative), or Space Grotesk (geometric alternative)
 - **Weights:** 400, 500
-- **Sizes:** 14px, 16px, 17px, 20px, 24px, 42px
-- **Line height:** 1.10 (display), 1.20 (headings), 1.40 (body)
-- **Letter spacing:** -0.03em at all sizes (approximately -0.42px at 14px, -0.48px at 16px, -0.51px at 17px, -0.6px at 20px, -0.72px at 24px, -1.26px at 42px)
-- **Role:** The single typeface carries every voice on the site — nav, body, headings, buttons, inputs. Weight 400 is the default for body and nav; weight 500 is reserved for emphasized inline labels (e.g. 'Last Updated:') and section opens. The choice of a neo-grotesque with consistent -0.03em tracking at every size creates optical tightness even at 42px, avoiding the airy looseness most sans-serifs default to. This is a Swiss-tool typeface, not a personality typeface — restraint is the signature.
-
-### neue-haas-grotesk-text — neue-haas-grotesk-text — detected in extracted data but not described by AI · `--font-neue-haas-grotesk-text`
-- **Weights:** 400
-- **Sizes:** 20px
-- **Line height:** 1.4
-- **Role:** neue-haas-grotesk-text — detected in extracted data but not described by AI
+- **Sizes:** 10, 12, 13, 14, 16, 17, 19, 20, 22, 23, 27, 29, 30, 33, 35, 43, 55, 59, 69, 73, 81px
+- **Line height:** 0.80, 1.00, 1.10, 1.20, 1.40, 1.43, 1.50
+- **Letter spacing:** -1.13px at 81px, -0.80px at 73px, -0.69px at 69px, -0.53px at 59px, -0.44px at 55px, -0.30px at 43px, -0.21px at 35px, -0.17px at 33px, -0.12px at 29-30px, -0.08px at 27px, -0.05px at 22-23px, normal at 16px and below, +0.01em on small labels
+- **OpenType features:** `"ss01" on, "kern" on, "liga" on`
+- **Role:** Sole typeface across the entire system. PP Neue Montreal is a geometric humanist sans with a soft, slightly rounded terminal — more editorial than Inter, more clinical than GT America. Used at weight 400 for body and 500 for emphasis; no weight 600+ anywhere, which keeps the voice restrained and high-end. Display sizes (43–81px) use tight negative tracking (down to -1.13px) to lock letters into compact editorial blocks. Substitute with Inter (close) or Manrope (slightly warmer).
 
 ### Type Scale
 
 | Role | Size | Line Height | Letter Spacing | Token |
 |------|------|-------------|----------------|-------|
-| caption | 14px | 1.4 | -0.42px | `--text-caption` |
-| body-sm | 16px | 1.4 | -0.48px | `--text-body-sm` |
-| subheading | 20px | 1.4 | -0.6px | `--text-subheading` |
-| heading-sm | 24px | 1.2 | -0.72px | `--text-heading-sm` |
-| heading | 42px | 1.1 | -1.26px | `--text-heading` |
+| caption | 12px | 1.4 | 0.12px | `--text-caption` |
+| body | 14px | 1.5 | — | `--text-body` |
+| body-lg | 16px | 1.5 | — | `--text-body-lg` |
+| subheading | 19px | 1.4 | — | `--text-subheading` |
+| heading-sm | 22px | 1.2 | -0.05px | `--text-heading-sm` |
+| heading-lg | 35px | 1.1 | -0.21px | `--text-heading-lg` |
+| display | 43px | 1.1 | -0.3px | `--text-display` |
+| display-lg | 55px | 1.1 | -0.44px | `--text-display-lg` |
+| hero | 73px | 1 | -0.8px | `--text-hero` |
+| hero-xl | 81px | 0.8 | -1.13px | `--text-hero-xl` |
 
 ## Tokens — Spacing & Shapes
-
-**Base unit:** 6px
 
 **Density:** comfortable
 
@@ -51,150 +53,170 @@ Programa operates in a Swiss-design vocabulary: near-pure white canvas, architec
 
 | Name | Value | Token |
 |------|-------|-------|
+| 4 | 4px | `--spacing-4` |
 | 6 | 6px | `--spacing-6` |
+| 8 | 8px | `--spacing-8` |
+| 9 | 9px | `--spacing-9` |
+| 10 | 10px | `--spacing-10` |
 | 12 | 12px | `--spacing-12` |
+| 13 | 13px | `--spacing-13` |
+| 14 | 14px | `--spacing-14` |
+| 16 | 16px | `--spacing-16` |
+| 20 | 20px | `--spacing-20` |
 | 24 | 24px | `--spacing-24` |
-| 36 | 36px | `--spacing-36` |
-| 48 | 48px | `--spacing-48` |
-| 96 | 96px | `--spacing-96` |
+| 28 | 28px | `--spacing-28` |
+| 32 | 32px | `--spacing-32` |
+| 52 | 52px | `--spacing-52` |
+| 72 | 72px | `--spacing-72` |
+| 152 | 152px | `--spacing-152` |
 
 ### Border Radius
 
 | Element | Value |
 |---------|-------|
-| nav | 10px |
-| cards | 16px |
-| inputs | 10px |
-| buttons | 10px |
+| nav | 6px |
+| cards | 6px |
+| icons | 9999px |
+| inputs | 9999px |
+| buttons | 9999px |
 
 ### Layout
 
 - **Page max-width:** 1200px
-- **Section gap:** 96px
-- **Card padding:** 16px
+- **Section gap:** 52px
+- **Card padding:** 12px
 - **Element gap:** 12px
 
 ## Components
 
+### Amber Filled Pill Button
+**Role:** Primary CTA
+
+Solid #ffb442 fill, Warm Cream (#fff1e0) text at 14px weight 500, full pill radius (9999px), 12px vertical padding × 15px horizontal padding. No border, no shadow. Text sits dead-center with optical adjustment. The amber glows against Espresso like a heated brand.
+
+### Cream Outlined Pill Button
+**Role:** Secondary action / Patient Portal
+
+Transparent fill, 1px Warm Cream (#fff1e0) border, Warm Cream text at 14px weight 500, 9999px radius, 10–12px vertical padding. Pairs beside the amber primary to create a clear hierarchy without introducing new colors.
+
+### Arrow Icon Circle
+**Role:** Inline action accent (sits beside CTAs and card headers)
+
+Filled Amber Forge circle, ~36–40px diameter, 9999px radius, centered diagonal-arrow icon in Espresso (#140b00) at ~16px. Functions as a secondary 'go' signal and visual companion to the pill button — a recurring motif.
+
 ### Top Navigation Bar
-**Role:** Sticky-style header anchoring page identity and primary destinations
+**Role:** Primary site navigation
 
-White background, no border-bottom. Left: geometric two-diamond logo (Ink Black) + 'Programa' wordmark at 16-20px weight 400. Center: nav links (Product, Customers, Pricing, Learn) at 16px weight 400, Ink Black, 24px horizontal spacing. Right: 'Log in' as a text link in Ink Black, then a Primary CTA Button. Height feels ~64px with generous horizontal padding.
+Transparent over hero, becomes Espresso (#140b00) on scroll. Left: ABL monogram in Warm Cream weight 500. Center: nav links in Warm Cream at 14px weight 400. Right: outlined Cream pill 'Patient Portal' + Amber Forge filled 'Join the list' pill. Nav container itself has a 6px radius on inner elements, no pill radius on the bar.
 
-### Primary CTA Button
-**Role:** The single high-emphasis action on any screen
+### Feature Card (Icon + Title + Body)
+**Role:** 3-up feature grid in the hero band
 
-Highlighter Yellow (#fbff2b) fill, 1px Ink Black (#1a1a1a) border, 10px border-radius, 8px vertical / 12px horizontal padding. Label in Neue Haas Grotesk Text 16px weight 400, Ink Black. 12px gap between sibling buttons. The 1px black outline around a yellow fill gives the button a hand-stamped, sticker-like quality — it's the only place a border reinforces rather than contains.
+Transparent surface — no card fill. 1px Walnut (#43392d) bottom border as a hairline divider. Circular icon container ~40px diameter with Walnut border, monochrome icon inside. Title in Warm Cream 14px weight 500, body in Driftwood (#85796c) 14px weight 400. Tight 12px padding inside, no rounded corners on the card itself.
 
-### Ghost Text Button
-**Role:** Secondary, low-emphasis action paired with the primary CTA
+### FAQ Accordion Row
+**Role:** Frequently asked questions list
 
-No fill, no border. Label in Neue Haas Grotesk Text 16px weight 400, Ink Black. Sits to the left of the Primary CTA. Vertically aligned to the same baseline as the CTA.
+Full-width row on a light Cream (#fff1e0) surface band. 1px Walnut hairline separator between items. Question text in Espresso (#140b00) at 17px weight 500, left-aligned, with a + icon in Espresso at the right. Compact 14px vertical padding, no card radius — the items are a vertical list, not boxes.
 
-### Page Heading
-**Role:** Hero heading for content pages
+### Pill Input Field
+**Role:** Form input
 
-Neue Haas Grotesk Text 42px weight 500, Ink Black, line-height 1.10, letter-spacing -1.26px. Left-aligned with 111px left margin. No subtitle, no eyebrow — the heading stands alone.
+Transparent fill, 1px Cedar (#4f4538) border, full pill radius (9999px), 12px vertical padding. Placeholder text in Driftwood (#85796c), entered text in Warm Cream. Focus state intensifies border to Amber Forge (#ffb442) — no glow, just a color shift.
 
-### Info Banner
-**Role:** Metadata callout (e.g. 'Last Updated') below the page heading
+### Badge / Tag
+**Role:** Small inline label
 
-Fog Gray (#f4f4f4) fill, no border, 16px border-radius. Padding ~12px vertical / 16px horizontal. Content is a label-value pair: bold label ('Last Updated:') in Ink Black weight 500, followed by value in Ink Black weight 400, both at 16px.
+Filled Walnut (#43392d) or outlined Warm Cream, 9999px radius, 4–10px vertical padding, caption-size (12px) text in Warm Cream. Used sparingly for category tags.
 
-### Numbered Section Block
-**Role:** Ordered content list with bold lead-in label
+### Section Headline Block
+**Role:** Section title with optional CTA
 
-Decimal number (1., 2., …) flush left at 16px Ink Black weight 400. Indented label (e.g. 'Purpose and Scope') in 16px weight 500 Ink Black. Body paragraphs in 16-17px weight 400 Ink Black at line-height 1.4. Vertical gap between sections: 8px. The bold label + paragraph pattern is a signature — it's the page's only typographic hierarchy device.
+Left-aligned or centered heading at 43–73px, weight 400, Warm Cream on dark, tight negative tracking. Optional Amber Forge filled 'Explore All' pill button + Arrow Icon Circle beneath, stacked vertically. No subtitle unless paired with subheading-sm.
 
-### Logo Lockup
-**Role:** Brand mark + wordmark for header and footer
+### Clock Dial Visualization
+**Role:** Signature data graphic (biological age widget)
 
-Two stacked diamond/parallelogram shapes in Ink Black, approximately 24x24px, followed by 'Programa' wordmark in Neue Haas Grotesk Text 20px weight 400, Ink Black, letter-spacing -0.6px. 8px gap between icon and wordmark.
+Midnight Cocoa (#0b0600) deep dark band, centered circular dot-clock made of 60 small Warm Cream dots arranged in a ring, with a vertical pendulum line from top center. Large numeric readout in Warm Cream at 69px weight 500, label beneath in Driftwood 13px. Pure data-art, no chrome or shadow.
 
-### Form Input
-**Role:** Text entry field
+### Hero Headline
+**Role:** Primary above-the-fold statement
 
-1px Ink Black border, 10px border-radius, 6px vertical / 12px horizontal padding. Placeholder text in Ash Gray (#a3a3a3) at 16px. White fill. On focus: border remains Ink Black (no color shift) — the focus state is communicated through weight or ring, not hue.
+Two-line statement at 73–81px weight 400, Warm Cream (#fff1e0), line-height 0.80–1.00, letter-spacing -0.80 to -1.13px. Sits over full-bleed hero image with a subtle Espresso gradient scrim. Below: body subtext in Driftwood at 16px weight 400, max-width ~440px, followed by Amber Filled Pill Button + Arrow Icon Circle row.
 
-### Nav Link
-**Role:** Top-level navigation destination
+### Footer
+**Role:** Site footer band
 
-Neue Haas Grotesk Text 16px weight 400, Ink Black, no underline, no color shift on hover visible in data. 24px horizontal spacing between links. 4px column gap from the wordmark.
-
-### Footer Link
-**Role:** Secondary navigation in footer
-
-Neue Haas Grotesk Text 14-16px weight 400, Ink Black, muted compared to nav. Typically arranged in columns with 8-12px vertical gap between links.
+Midnight Cocoa (#0b0600) surface, one step deeper than the page. Content in Warm Cream and Driftwood, compact rows, no heavy decoration. Legal text in caption 12px.
 
 ## Do's and Don'ts
 
 ### Do
-- Use #fbff2b fill with 1px #1a1a1a border exclusively for the single primary action per screen — never use the yellow as a background for large surfaces or decorative blocks.
-- Set all text at -0.03em letter-spacing using the Neue Haas Grotesk Text scale (14/16/17/20/24/42px) — do not introduce a second typeface or loosen tracking at display sizes.
-- Apply 10px border-radius to buttons, nav elements, and inputs; reserve 16px for larger card surfaces and info banners.
-- Build vertical rhythm on the 6px base unit: 8px between list items, 12px for element gaps, 16px for card padding, 48-96px for section separation.
-- Use #f4f4f4 as the only mid-surface between white and the yellow accent — never introduce additional gray tints or gradient washes.
-- Keep page layout centered with a 1200px max-width and 111px left margin for content blocks; let white space carry the visual weight.
-- Communicate hierarchy through weight (400 vs 500), not color or size variation — the system has exactly two weights and a tight type scale.
+- Use Amber Forge (#ffb442) exclusively for primary actions and one-per-section accent moments — never as a background fill for large surfaces
+- Set every button, input, and inline link to a 9999px pill radius; reserve 6px radius for cards, nav, and structural surfaces
+- Anchor type with PP Neue Montreal weight 400 for body and weight 500 for headings/emphasis only — no weight 600 or above anywhere in the system
+- Apply tight negative letter-spacing on any type at 27px or larger, scaling from -0.05px at 22px to -1.13px at 81px
+- Keep section vertical spacing at 52px and element gaps at 12px to preserve the system's compact-premium rhythm
+- Place Cream Outlined Pill Buttons adjacent to Amber Filled Pills to establish primary/secondary hierarchy without adding new colors
+- Communicate elevation through Amber-on-Espresso color contrast and 1px Walnut hairlines, never through box-shadows or blur
 
 ### Don't
-- Don't introduce drop shadows, glow effects, or blur — elevation is flat and border-defined.
-- Don't use #fbff2b on more than one element per viewport — its power comes from scarcity.
-- Don't add a second accent color; the palette is monochrome + one yellow-green signal.
-- Don't use Ash Gray (#a3a3a3) for body copy — it's a 2.5:1 contrast fail on white; reserve it for placeholders and inactive metadata only.
-- Don't increase border-radius above 16px — the slightly squared geometry is part of the identity.
-- Don't break the 6px spacing grid with arbitrary pixel values; every gap should be a multiple of 6.
-- Don't add a subtitle or eyebrow text above page headings — the 42px heading stands alone.
+- Don't introduce a second chromatic accent — the system's restraint lives in having exactly one warm signal color
+- Don't use pure black (#000000) or pure white (#ffffff); stay within the Espresso (#140b00) → Warm Cream (#fff1e0) warmth band
+- Don't apply box-shadows, blurs, or glows to any component — depth is built through border tone and color contrast only
+- Don't break the pill-vs-card radius convention: never put a pill button inside a 6px card frame, and never give a card a 9999px radius
+- Don't set body text below 14px or above 18px — the system's voice lives in the 14–18px range, not in tiny micro-copy
+- Don't use amber text on light sections — Amber Forge is a dark-canvas signal only; on Cream surfaces use Espresso for primary text
+- Don't stack more than two font weights on a single screen; the system reads as 400-and-500-only, never 700+
 
 ## Surfaces
 
 | Level | Name | Value | Purpose |
 |-------|------|-------|---------|
-| 0 | Canvas | `#ffffff` | Page background — the dominant surface |
-| 1 | Fog Card | `#f4f4f4` | Soft info banners and elevated callouts that recede without a border |
-| 2 | Accent Fill | `#fbff2b` | Highlight wash on primary action surfaces |
+| 0 | Espresso Canvas | `#140b00` | Base page background, dominant canvas |
+| 1 | Midnight Cocoa | `#0b0600` | Footer and recessed dark bands, one step deeper than canvas |
+| 2 | Walnut Outline | `#43392d` | Card and panel borders on the Espresso canvas |
+| 3 | Amber Signal | `#ffb442` | Action fill, the only elevated chromatic surface |
+| 4 | Warm Cream | `#fff1e0` | Inverse text surface (light bands, e.g. FAQ section) that flips the system |
 
 ## Elevation
 
-Programa deliberately avoids box-shadows. Elevation is communicated through surface color shifts (white → fog gray) and the 1px ink-black border, not through drop shadows. This keeps the system flat and architectural — the Swiss-design tradition where lines define form, not light.
+- **Pill buttons and icon controls:** `none — buttons sit flat against the dark canvas, depth implied only by color contrast between Amber Forge fill and Espresso`
+- **Cards and panels:** `none — cards rely on a 1px Walnut border (#43392d) rather than shadow to read as raised`
+- **FAQ accordion items:** `none — separators are 1px Warm Cream at reduced opacity, no shadow`
 
 ## Imagery
 
-Pure UI with no photography or illustration on this page — the visual language is typographic and structural. Logo is the only graphic mark, rendered as two solid Ink Black geometric shapes (diamond/parallelogram forms). The highlighter-yellow CTA is itself a visual element: a stamped sticker on the white canvas. No icons, no avatars, no product screenshots on the Acceptable Use Policy page. When imagery does appear elsewhere, expect it to be contained within sharp or slightly rounded crops, full-bleed product photography on pure white, and monochromatic or single-accent treatment consistent with the palette.
+Imagery is cinematic and masculine: high-resolution lifestyle photography of confident older men (60s+) in outdoor golden-hour settings — desert roads, mountain vistas, luxury vehicle interiors. Photography is full-bleed in the hero, color-graded warm to match the Espresso/Amber palette, with a subtle Espresso scrim to keep text legible. No illustrations, no product shots, no abstract graphics in the main flow — the brand leans entirely on human portraiture to carry trust. The one exception is the clock-dial data visualization, which is pure dot-and-line graphic art in Warm Cream. Icons throughout are monochrome line icons in Warm Cream at consistent ~16–20px stroke weight, sitting inside small Walnut-bordered circular containers when paired with feature text.
 
 ## Layout
 
-Centered max-width layout (~1200px) with generous side margins (111px+). The header is a flat white bar with no border, logo left, centered nav cluster, auth actions right. Content pages lead with a single large 42px left-aligned heading, followed by a full-width Fog Gray info banner, then a vertically stacked numbered content list that uses bold lead-in labels + paragraphs. Section separation is 48-96px vertical padding. No alternating bands, no sidebar, no grid cards on content pages — the rhythm is a single column of breathing white space punctuated by sparse structural elements.
+Max-width 1200px centered content rail with hero that goes full-bleed for the background photograph. Hero is a split composition: left rail holds the headline + subtext + CTA row, right side is occupied by the photograph of the subject. Below the hero, a 3-up feature card grid sits on the same Espresso canvas with no card fills — just hairline bottom borders. Section rhythm alternates between full-bleed Espresso bands and occasional light Cream bands (the FAQ section flips to Cream-on-Espresso). Headlines left-align by default, section transitions use 52px vertical breath. Navigation is a transparent top bar that becomes solid Espresso on scroll. Overall density is comfortable but not airy — the system reads as confident and compact rather than spacious.
 
 ## Agent Prompt Guide
 
 Quick Color Reference:
-- text: #1a1a1a
-- background: #ffffff
-- surface: #f4f4f4
-- border: #1a1a1a
-- muted text: #a3a3a3
-- primary action: #fbff2b (filled action)
+- text: #fff1e0 (Warm Cream) on #140b00 (Espresso) canvas
+- Create a Primary Action Button: #ffb442 background, #140b00 text, 9999px radius, compact pill padding. Use this filled treatment for the main CTA.
+- border: #43392d (Walnut) for hairlines, #4f4538 (Cedar) for input outlines
+- accent: #ffb442 (Amber Forge) for highlights and signal moments
+- muted text: #85796c (Driftwood)
+- primary action: #ffb442 (filled action)
 
 Example Component Prompts:
-
-1. Create a Primary Action Button: #fbff2b background, #1a1a1a text, 9999px radius, compact pill padding. Use this filled treatment for the main CTA.
-
-2. Create a page heading block: 42px Neue Haas Grotesk Text weight 500 #1a1a1a, line-height 1.10, letter-spacing -1.26px, left-aligned with 111px left margin. Below it, an info banner: #f4f4f4 fill, 16px radius, 12px 16px padding, containing 'Last Updated:' in 16px weight 500 #1a1a1a followed by 'January 1, 2026' in 16px weight 400 #1a1a1a.
-
-3. Create a numbered content section: decimal number '1.' in 16px weight 400 #1a1a1a flush left, then a bold lead-in label in 16px weight 500 #1a1a1a, then a body paragraph in 17px weight 400 #1a1a1a at line-height 1.40. 8px vertical gap to the next section.
-
-4. Create a form input: 1px #1a1a1a border, 10px radius, #ffffff fill, 6px 12px padding. Placeholder 'Enter your email' in 16px #a3a3a3. Label above in 14px weight 500 #1a1a1a with 8px bottom margin.
-
-5. Create a secondary card surface: #f4f4f4 fill, 16px border-radius, 24px padding, no border, no shadow. Heading inside in 20px weight 500 #1a1a1a, body in 16px weight 400 #1a1a1a, 12px gap between heading and body.
+1. Build a hero section: full-bleed photograph with Espresso (#140b00) scrim. Headline at 73px PP Neue Montreal weight 400, #fff1e0, letter-spacing -0.80px, line-height 1.0. Subtext at 16px weight 400, #85796c, max-width 440px. Amber Filled Pill Button (#ffb442 fill, #fff1e0 text, 9999px radius, 12px 15px padding) paired with a 36px Amber Forge Arrow Icon Circle.
+2. Build a 3-up feature card grid: transparent surfaces, 1px #43392d bottom border, 12px padding. Each card has a 40px circular Walnut-bordered icon container, 14px weight 500 #fff1e0 title, 14px weight 400 #85796c body. 12px gap between icon container and text.
+3. Build a FAQ accordion on a #fff1e0 surface: full-width rows, 1px #43392d separator, question text at 17px weight 500 #140b00, + icon at the right in #140b00, 14px vertical padding per row.
+4. Build a pill input field: transparent fill, 1px #4f4538 border, 9999px radius, 12px vertical padding, 14px #85796c placeholder that becomes #fff1e0 on input. Focus shifts border to #ffb442.
+5. Build the clock-dial data graphic: centered on #0b0600 band, 60 small #fff1e0 dots in a circle, vertical pendulum line in #fff1e0 from top, numeric readout at 69px weight 500 #fff1e0 centered, label at 13px #85796c beneath.
 
 ## Similar Brands
 
-- **Linear** — Same near-monochrome palette with a single saturated accent (Linear's purple), tight typographic system, and minimal-border component geometry
-- **Figma Config** — Same Swiss-design restraint with hairline borders, generous white space, and a single chromatic accent used sparingly for primary actions
-- **Notion** — Similar flat-no-shadow component language, 10px-ish radii, and a neutral-first palette where one accent color carries the brand
-- **Vercel** — Same editorial minimalism with monochrome canvas, tight tracking on a neo-grotesque typeface, and accent color rationed to CTAs only
-- **Are.na** — Same white-canvas-plus-muted-neutral aesthetic with type-driven hierarchy and zero decorative chrome
+- **Hims** — Same warm dark canvas with a single saturated accent for CTAs, pill-shaped buttons, and lifestyle portrait photography of confident older men
+- **Ro (Roman)** — Dark-mode men's health interface with a restrained two-color palette (one accent + cream), pill controls, and editorial negative-tracked headlines
+- **Saddleback Leather** — Warm coffee-black backgrounds with cream typography, masculine/premium product photography, and zero decorative noise
+- **Oliver Cabell** — Same warm dark hero with golden-hour portrait photography, full-bleed imagery, and a single bright accent color on action elements
+- **MUDWTR** — Dark earthy backgrounds (brown-black, not blue-black), single warm amber accent, and editorial negative-tracked display type
 
 ## Quick Start
 
@@ -203,65 +225,94 @@ Example Component Prompts:
 ```css
 :root {
   /* Colors */
-  --color-ink-black: #1a1a1a;
-  --color-paper-white: #ffffff;
-  --color-fog-gray: #f4f4f4;
-  --color-ash-gray: #a3a3a3;
-  --color-highlighter-yellow: #fbff2b;
+  --color-espresso: #140b00;
+  --color-midnight-cocoa: #0b0600;
+  --color-warm-cream: #fff1e0;
+  --color-soft-cream: #f1f1f1;
+  --color-walnut: #43392d;
+  --color-cedar: #4f4538;
+  --color-driftwood: #85796c;
+  --color-burnt-edge: #181109;
+  --color-amber-forge: #ffb442;
 
   /* Typography — Font Families */
-  --font-neue-haas-grotesk-text: 'Neue Haas Grotesk Text', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-pp-neue-montreal: 'PP Neue Montreal', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Typography — Scale */
-  --text-caption: 14px;
+  --text-caption: 12px;
   --leading-caption: 1.4;
-  --tracking-caption: -0.42px;
-  --text-body-sm: 16px;
-  --leading-body-sm: 1.4;
-  --tracking-body-sm: -0.48px;
-  --text-subheading: 20px;
+  --tracking-caption: 0.12px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --text-subheading: 19px;
   --leading-subheading: 1.4;
-  --tracking-subheading: -0.6px;
-  --text-heading-sm: 24px;
+  --text-heading-sm: 22px;
   --leading-heading-sm: 1.2;
-  --tracking-heading-sm: -0.72px;
-  --text-heading: 42px;
-  --leading-heading: 1.1;
-  --tracking-heading: -1.26px;
+  --tracking-heading-sm: -0.05px;
+  --text-heading-lg: 35px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.21px;
+  --text-display: 43px;
+  --leading-display: 1.1;
+  --tracking-display: -0.3px;
+  --text-display-lg: 55px;
+  --leading-display-lg: 1.1;
+  --tracking-display-lg: -0.44px;
+  --text-hero: 73px;
+  --leading-hero: 1;
+  --tracking-hero: -0.8px;
+  --text-hero-xl: 81px;
+  --leading-hero-xl: 0.8;
+  --tracking-hero-xl: -1.13px;
 
   /* Typography — Weights */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
   /* Spacing */
-  --spacing-unit: 6px;
+  --spacing-4: 4px;
   --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
   --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
   --spacing-24: 24px;
-  --spacing-36: 36px;
-  --spacing-48: 48px;
-  --spacing-96: 96px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-52: 52px;
+  --spacing-72: 72px;
+  --spacing-152: 152px;
 
   /* Layout */
   --page-max-width: 1200px;
-  --section-gap: 96px;
-  --card-padding: 16px;
+  --section-gap: 52px;
+  --card-padding: 12px;
   --element-gap: 12px;
 
   /* Border Radius */
-  --radius-lg: 10px;
-  --radius-2xl: 16px;
+  --radius-md: 6px;
+  --radius-full: 1162.8px;
+  --radius-full-2: 1296px;
 
   /* Named Radii */
-  --radius-nav: 10px;
-  --radius-cards: 16px;
-  --radius-inputs: 10px;
-  --radius-buttons: 10px;
+  --radius-nav: 6px;
+  --radius-cards: 6px;
+  --radius-icons: 9999px;
+  --radius-inputs: 9999px;
+  --radius-buttons: 9999px;
 
   /* Surfaces */
-  --surface-canvas: #ffffff;
-  --surface-fog-card: #f4f4f4;
-  --surface-accent-fill: #fbff2b;
+  --surface-espresso-canvas: #140b00;
+  --surface-midnight-cocoa: #0b0600;
+  --surface-walnut-outline: #43392d;
+  --surface-amber-signal: #ffb442;
+  --surface-warm-cream: #fff1e0;
 }
 ```
 
@@ -270,42 +321,69 @@ Example Component Prompts:
 ```css
 @theme {
   /* Colors */
-  --color-ink-black: #1a1a1a;
-  --color-paper-white: #ffffff;
-  --color-fog-gray: #f4f4f4;
-  --color-ash-gray: #a3a3a3;
-  --color-highlighter-yellow: #fbff2b;
+  --color-espresso: #140b00;
+  --color-midnight-cocoa: #0b0600;
+  --color-warm-cream: #fff1e0;
+  --color-soft-cream: #f1f1f1;
+  --color-walnut: #43392d;
+  --color-cedar: #4f4538;
+  --color-driftwood: #85796c;
+  --color-burnt-edge: #181109;
+  --color-amber-forge: #ffb442;
 
   /* Typography */
-  --font-neue-haas-grotesk-text: 'Neue Haas Grotesk Text', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-pp-neue-montreal: 'PP Neue Montreal', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   /* Typography — Scale */
-  --text-caption: 14px;
+  --text-caption: 12px;
   --leading-caption: 1.4;
-  --tracking-caption: -0.42px;
-  --text-body-sm: 16px;
-  --leading-body-sm: 1.4;
-  --tracking-body-sm: -0.48px;
-  --text-subheading: 20px;
+  --tracking-caption: 0.12px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --text-subheading: 19px;
   --leading-subheading: 1.4;
-  --tracking-subheading: -0.6px;
-  --text-heading-sm: 24px;
+  --text-heading-sm: 22px;
   --leading-heading-sm: 1.2;
-  --tracking-heading-sm: -0.72px;
-  --text-heading: 42px;
-  --leading-heading: 1.1;
-  --tracking-heading: -1.26px;
+  --tracking-heading-sm: -0.05px;
+  --text-heading-lg: 35px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.21px;
+  --text-display: 43px;
+  --leading-display: 1.1;
+  --tracking-display: -0.3px;
+  --text-display-lg: 55px;
+  --leading-display-lg: 1.1;
+  --tracking-display-lg: -0.44px;
+  --text-hero: 73px;
+  --leading-hero: 1;
+  --tracking-hero: -0.8px;
+  --text-hero-xl: 81px;
+  --leading-hero-xl: 0.8;
+  --tracking-hero-xl: -1.13px;
 
   /* Spacing */
+  --spacing-4: 4px;
   --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
   --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
   --spacing-24: 24px;
-  --spacing-36: 36px;
-  --spacing-48: 48px;
-  --spacing-96: 96px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-52: 52px;
+  --spacing-72: 72px;
+  --spacing-152: 152px;
 
   /* Border Radius */
-  --radius-lg: 10px;
-  --radius-2xl: 16px;
+  --radius-md: 6px;
+  --radius-full: 1162.8px;
+  --radius-full-2: 1296px;
 }
 ```
