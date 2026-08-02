@@ -17,6 +17,7 @@
     "close": "Закрити"
   },
   "hero": {
+    "image": "/mila-patramanska.jpg",
     "eyebrow": "Performance-маркетологиня",
     "title": "Перетворюю рекламний бюджет на прогнозований ріст",
     "subtitle": "7 років у performance-маркетингу, 15+ завершених проєктів та ROMI до 500%+. Будую медіастратегії, які продають, а не просто показуються.",
@@ -27,6 +28,7 @@
     "scrollHint": "Гортайте далі"
   },
   "about": {
+    "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
     "eyebrow": "Про мене",
     "title": "Маркетинг як система, а не набір гіпотез навмання",
     "paragraphs": [
@@ -34,10 +36,22 @@
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     ],
     "highlights": [
-      { "label": "Досвід у маркетингу", "value": "7 років" },
-      { "label": "Завершених проєктів", "value": "15+" },
-      { "label": "Ніш і індустрій", "value": "12+" },
-      { "label": "Команд під керівництвом", "value": "6" }
+      {
+        "label": "Досвід у маркетингу",
+        "value": "7 років"
+      },
+      {
+        "label": "Завершених проєктів",
+        "value": "15+"
+      },
+      {
+        "label": "Ніш і індустрій",
+        "value": "12+"
+      },
+      {
+        "label": "Команд під керівництвом",
+        "value": "6"
+      }
     ],
     "imageAlt": "Портрет маркетологині за роботою"
   },
@@ -46,10 +60,26 @@
     "title": "Цифри, які говорять самі за себе",
     "subtitle": "За 7 років у performance-маркетингу я перетворила рекламні бюджети клієнтів на вимірюваний, прогнозований прибуток.",
     "items": [
-      { "value": "15", "suffix": "+", "label": "Реалізованих проєктів" },
-      { "value": "7", "suffix": "+", "label": "Років у маркетингу" },
-      { "value": "200", "suffix": "K$", "label": "Максимальний бюджет на місяць" },
-      { "value": "500", "suffix": "%+", "label": "Максимальний ROMI на проєкті" }
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Реалізованих проєктів"
+      },
+      {
+        "value": "7",
+        "suffix": "+",
+        "label": "Років у маркетингу"
+      },
+      {
+        "value": "200",
+        "suffix": "K$",
+        "label": "Максимальний бюджет на місяць"
+      },
+      {
+        "value": "500",
+        "suffix": "%+",
+        "label": "Максимальний ROMI на проєкті"
+      }
     ]
   },
   "work": {
@@ -63,37 +93,43 @@
         "tag": "E-commerce",
         "title": "Ріст онлайн-продажів ритейлера",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.",
-        "metric": "ROMI 480%"
+        "metric": "ROMI 480%",
+        "image": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=800&q=80"
       },
       {
         "tag": "SaaS",
         "title": "Масштабування лідогенерації B2B-продукту",
         "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.",
-        "metric": "-42% CPL"
+        "metric": "-42% CPL",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
       },
       {
         "tag": "Мобільний застосунок",
         "title": "Запуск і масштабування застосунку на нові ринки",
         "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.",
-        "metric": "x3.2 інсталяції"
+        "metric": "x3.2 інсталяції",
+        "image": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=800&q=80"
       },
       {
         "tag": "Fintech",
         "title": "Перезапуск платної реклами фінтех-продукту",
         "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",
-        "metric": "ROMI 512%"
+        "metric": "ROMI 512%",
+        "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
       },
       {
         "tag": "DTC Beauty",
         "title": "Побудова performance-воронки з нуля",
         "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        "metric": "x4 виручка"
+        "metric": "x4 виручка",
+        "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80"
       },
       {
         "tag": "EdTech",
         "title": "Оптимізація юніт-економіки платних кампаній",
         "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.",
-        "metric": "-35% CAC"
+        "metric": "-35% CAC",
+        "image": "https://images.unsplash.com/photo-1596496181848-3091d4878b24?auto=format&fit=crop&w=800&q=80"
       }
     ]
   },
@@ -152,7 +188,11 @@
     "eyebrow": "Формати",
     "title": "Формати співпраці",
     "subtitle": "Три способи попрацювати разом — залежно від того, яке у вас завдання.",
-    "tableHeaders": ["Формат", "Для кого", "Результат"],
+    "tableHeaders": [
+      "Формат",
+      "Для кого",
+      "Результат"
+    ],
     "items": [
       {
         "format": "Consultation",
@@ -172,12 +212,30 @@
     ],
     "cmoDetailsTitle": "Fractional CMO детальніше",
     "cmoDetails": [
-      { "label": "Мінімальний строк співпраці", "value": "3 місяці" },
-      { "label": "Кількість зустрічей", "value": "2 стратегічні на місяць + щотижневі синки" },
-      { "label": "Рівень залучення", "value": "~15–20 годин на тиждень" },
-      { "label": "Операційне управління", "value": "Так, включно з керуванням підрядниками" },
-      { "label": "Робота з командою клієнта", "value": "Так, навчання та контроль виконання" },
-      { "label": "Стартова вартість", "value": "від $2,500 на місяць" }
+      {
+        "label": "Мінімальний строк співпраці",
+        "value": "3 місяці"
+      },
+      {
+        "label": "Кількість зустрічей",
+        "value": "2 стратегічні на місяць + щотижневі синки"
+      },
+      {
+        "label": "Рівень залучення",
+        "value": "~15–20 годин на тиждень"
+      },
+      {
+        "label": "Операційне управління",
+        "value": "Так, включно з керуванням підрядниками"
+      },
+      {
+        "label": "Робота з командою клієнта",
+        "value": "Так, навчання та контроль виконання"
+      },
+      {
+        "label": "Стартова вартість",
+        "value": "від $2,500 на місяць"
+      }
     ]
   },
   "process": {
@@ -255,7 +313,12 @@
       "emailPlaceholder": "you@company.com",
       "budget": "Орієнтовний бюджет",
       "budgetPlaceholder": "Оберіть діапазон",
-      "budgetOptions": ["до $1,000", "$1,000–5,000", "$5,000–20,000", "$20,000+"],
+      "budgetOptions": [
+        "до $1,000",
+        "$1,000–5,000",
+        "$5,000–20,000",
+        "$20,000+"
+      ],
       "message": "Повідомлення",
       "messagePlaceholder": "Розкажіть про ваш проєкт і цілі",
       "submit": "Надіслати повідомлення",

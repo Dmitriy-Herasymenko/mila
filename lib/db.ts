@@ -37,6 +37,31 @@ export async function ensureSchema() {
       updated_at timestamptz NOT NULL DEFAULT now()
     )
   `;
+  await sql`
+    CREATE TABLE IF NOT EXISTS images (
+      id serial PRIMARY KEY,
+      mime text NOT NULL,
+      data bytea NOT NULL,
+      created_at timestamptz NOT NULL DEFAULT now()
+    )
+  `;
+}
+
+export async function saveImage(mime: string, bytes: Buffer): Promise<number> {
+  const sql = getClient();
+  const rows = await sql`
+    INSERT INTO images (mime, data)
+    VALUES (${mime}, ${bytes})
+    RETURNING id
+  `;
+  return (rows[0] as { id: number }).id;
+}
+
+export async function getImage(id: number): Promise<{ mime: string; data: Buffer } | null> {
+  const sql = getClient();
+  const rows = await sql`SELECT mime, data FROM images WHERE id = ${id}`;
+  const row = rows[0] as { mime: string; data: Buffer } | undefined;
+  return row ?? null;
 }
 
 export async function getSectionRow(section: EditableSection) {

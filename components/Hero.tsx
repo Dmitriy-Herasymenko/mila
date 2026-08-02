@@ -28,6 +28,7 @@ function ArrowIconCircle() {
 
 export function Hero() {
   const t = useTranslations("hero");
+  const image = t("image");
 
   return (
     <section className="relative" style={{ backgroundColor: "var(--color-espresso)" }}>
@@ -91,7 +92,7 @@ export function Hero() {
           style={{ border: "1px solid var(--color-walnut)", borderRadius: "var(--radius-cards)" }}
         >
           <Image
-            src="/mila-patramanska.jpg"
+            src={image}
             alt="Mila Patramanska"
             fill
             priority

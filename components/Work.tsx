@@ -11,17 +11,8 @@ type CaseItem = {
   title: string;
   description: string;
   metric: string;
+  image: string;
 };
-
-// Matches the fixed order of items in messages/*.json: e-commerce, SaaS, mobile app, fintech, beauty, edtech
-const CASE_IMAGES = [
-  "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
-  "https://images.unsplash.com/photo-1596496181848-3091d4878b24?auto=format&fit=crop&w=800&q=80",
-];
 
 export function Work() {
   const t = useTranslations("work");
@@ -106,7 +97,7 @@ export function Work() {
             className="scrollbar-hide flex gap-[24px] overflow-x-auto pb-4"
             style={{ scrollSnapType: "x mandatory" }}
           >
-            {items.map((item, i) => (
+            {items.map((item) => (
               <motion.article
                 key={item.title}
                 whileHover={{ y: -4 }}
@@ -120,7 +111,7 @@ export function Work() {
               >
                 <div className="relative aspect-[4/3] w-full" style={{ backgroundColor: "var(--color-driftwood)" }}>
                   <Image
-                    src={CASE_IMAGES[i % CASE_IMAGES.length]}
+                    src={item.image}
                     alt={item.title}
                     fill
                     sizes="(min-width: 640px) 360px, 80vw"

@@ -19,7 +19,7 @@ export function About() {
             style={{ border: "1px solid var(--color-walnut)", borderRadius: "var(--radius-cards)" }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80"
+              src={t("image")}
               alt={t("imageAlt")}
               fill
               sizes="(min-width: 768px) 448px, 100vw"

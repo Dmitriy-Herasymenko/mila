@@ -1,8 +1,10 @@
 "use client";
 
 import type { PathKey } from "@/lib/objectPath";
+import { ImageField } from "./ImageField";
 
 const LONG_TEXT_HINT = /description|subtitle|answer|paragraph|desc|title/i;
+const IMAGE_FIELD_HINT = /^image$/i;
 
 export function FieldEditor({
   value,
@@ -16,6 +18,20 @@ export function FieldEditor({
   onChange: (path: PathKey[], value: unknown) => void;
 }) {
   if (typeof value === "string") {
+    if (label && IMAGE_FIELD_HINT.test(label)) {
+      return (
+        <div className="mb-4">
+          <span
+            className="mb-1.5 block text-[13px]"
+            style={{ color: "var(--color-warm-cream)", fontWeight: 500 }}
+          >
+            {label}
+          </span>
+          <ImageField value={value} onChange={(url) => onChange(path, url)} />
+        </div>
+      );
+    }
+
     const useTextarea = value.length > 60 || (label ? LONG_TEXT_HINT.test(label) : false);
     return (
       <label className="mb-4 flex flex-col gap-1.5">
