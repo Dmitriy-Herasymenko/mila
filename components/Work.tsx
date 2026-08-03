@@ -16,7 +16,7 @@ type CaseItem = {
 
 export function Work() {
   const t = useTranslations("work");
-  const items = t.raw("items") as CaseItem[];
+  const items = (t.raw("items") as CaseItem[] | undefined) ?? [];
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
 

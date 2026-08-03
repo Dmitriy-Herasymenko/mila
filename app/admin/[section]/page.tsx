@@ -5,6 +5,7 @@ import { EDITABLE_SECTIONS, getSectionRow, type EditableSection } from "@/lib/db
 
 const SECTION_LABELS: Record<string, string> = {
   hero: "Головний екран (Hero)",
+  marquee: "Бігуча стрічка (скіли)",
   about: "Про мене",
   stats: "Цифри, які говорять самі за себе",
   work: "Роботи",

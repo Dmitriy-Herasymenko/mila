@@ -17,7 +17,7 @@
     "close": "Close"
   },
   "hero": {
-    "image": "/mila-patramanska.jpg",
+    "image": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1600&q=80",
     "eyebrow": "Performance Marketer",
     "title": "Turning ad budget into predictable growth",
     "subtitle": "7 years in performance marketing, 15+ completed projects, and ROMI up to 500%+. I build media strategies that sell — not just get impressions.",
@@ -26,6 +26,20 @@
     "ctaPrimary": "Discuss a project",
     "ctaSecondary": "View work",
     "scrollHint": "Scroll to explore"
+  },
+  "marquee": {
+    "items": [
+      "Performance Marketing",
+      "Meta Ads",
+      "Google Ads",
+      "TikTok Ads",
+      "Analytics",
+      "CRO",
+      "Growth Strategy",
+      "Email Marketing",
+      "Fractional CMO",
+      "Unit Economics"
+    ]
   },
   "about": {
     "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
@@ -188,53 +202,102 @@
     "eyebrow": "Formats",
     "title": "Ways to work together",
     "subtitle": "Three formats to choose from, depending on what you actually need.",
-    "tableHeaders": [
-      "Format",
-      "Best for",
-      "Outcome"
-    ],
     "items": [
       {
         "format": "Consultation",
         "audience": "You have a specific question",
-        "result": "A decision and a plan for next steps"
+        "result": "A decision and a plan for next steps",
+        "detailsTitle": "Consultation in detail",
+        "details": [
+          {
+            "label": "Session length",
+            "value": "60–90 minutes"
+          },
+          {
+            "label": "Format",
+            "value": "Video call"
+          },
+          {
+            "label": "Number of sessions",
+            "value": "One-off session"
+          },
+          {
+            "label": "What you get",
+            "value": "A recorded action plan"
+          },
+          {
+            "label": "Preparation",
+            "value": "A brief with questions in advance"
+          },
+          {
+            "label": "Price",
+            "value": "from $150 per session"
+          }
+        ]
       },
       {
         "format": "Marketing audit",
         "audience": "You need a full diagnostic",
-        "result": "An audit and a 30–90 day roadmap"
+        "result": "An audit and a 30–90 day roadmap",
+        "detailsTitle": "Marketing audit in detail",
+        "details": [
+          {
+            "label": "Audit duration",
+            "value": "5–10 business days"
+          },
+          {
+            "label": "What's reviewed",
+            "value": "Campaigns, analytics, funnel, website"
+          },
+          {
+            "label": "Result format",
+            "value": "Document + a 30–90 day roadmap"
+          },
+          {
+            "label": "Meetings",
+            "value": "Kick-off + results presentation"
+          },
+          {
+            "label": "Access needed",
+            "value": "Ad accounts and analytics access"
+          },
+          {
+            "label": "Price",
+            "value": "from $800"
+          }
+        ]
       },
       {
         "format": "Fractional CMO",
         "audience": "You need ongoing management",
-        "result": "Strategy, team, KPIs, and execution oversight"
-      }
-    ],
-    "cmoDetailsTitle": "Fractional CMO in detail",
-    "cmoDetails": [
-      {
-        "label": "Minimum engagement length",
-        "value": "3 months"
-      },
-      {
-        "label": "Number of meetings",
-        "value": "2 strategic calls/month + weekly syncs"
-      },
-      {
-        "label": "Time commitment",
-        "value": "~15–20 hours per week"
-      },
-      {
-        "label": "Operational management",
-        "value": "Yes, including managing contractors"
-      },
-      {
-        "label": "Working with your team",
-        "value": "Yes, training and execution oversight"
-      },
-      {
-        "label": "Starting price",
-        "value": "from $2,500 per month"
+        "result": "Strategy, team, KPIs, and execution oversight",
+        "detailsTitle": "Fractional CMO in detail",
+        "details": [
+          {
+            "label": "Minimum engagement length",
+            "value": "3 months"
+          },
+          {
+            "label": "Number of meetings",
+            "value": "2 strategic calls/month + weekly syncs"
+          },
+          {
+            "label": "Time commitment",
+            "value": "~15–20 hours per week"
+          },
+          {
+            "label": "Operational management",
+            "value": "Yes, including managing contractors"
+          },
+          {
+            "label": "Working with your team",
+            "value": "Yes, training and execution oversight"
+          },
+          {
+            "label": "Starting price",
+            "value": "from $2,500 per month"
+          }
+        ]
       }
     ]
   },
@@ -246,27 +309,27 @@
       {
         "number": "01",
         "title": "Intro call & brief",
-        "description": "We discuss business goals, current metrics, and expectations from the collaboration."
+        "description": "We discuss business goals, current metrics, and expectations from the collaboration. We define what success looks like and by when."
       },
       {
         "number": "02",
         "title": "Audit & strategy",
-        "description": "I analyze current campaigns, the market, and competitors, then build a plan with a forecasted outcome."
+        "description": "I analyze current campaigns, the market, and competitors, then build a plan with a forecasted outcome. You get a concrete roadmap with clear priorities."
       },
       {
         "number": "03",
         "title": "Launch & testing",
-        "description": "I implement hypotheses, launch campaigns, and set up analytics and reporting."
+        "description": "I implement hypotheses, launch campaigns, and set up analytics and reporting. First data starts coming in within the first two weeks."
       },
       {
         "number": "04",
         "title": "Optimization",
-        "description": "Weekly, I analyze the data, cut what underperforms, and scale what drives results."
+        "description": "Weekly, I analyze the data, cut what underperforms, and scale what drives results. Decisions are based on numbers, not gut feeling."
       },
       {
         "number": "05",
         "title": "Reporting & scaling",
-        "description": "Regular transparent reports and a plan for further growing budget and results."
+        "description": "Regular transparent reports and a plan for further growing budget and results. You always see where the money goes and what it delivers."
       }
     ]
   },

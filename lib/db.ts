@@ -2,6 +2,7 @@ import { neon } from "@neondatabase/serverless";
 
 export type EditableSection =
   | "hero"
+  | "marquee"
   | "about"
   | "stats"
   | "work"
@@ -12,6 +13,7 @@ export type EditableSection =
 
 export const EDITABLE_SECTIONS: EditableSection[] = [
   "hero",
+  "marquee",
   "about",
   "stats",
   "work",

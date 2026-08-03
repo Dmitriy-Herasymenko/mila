@@ -6,8 +6,10 @@ import { Fit } from "@/components/Fit";
 import { Footer } from "@/components/Footer";
 import { Formats } from "@/components/Formats";
 import { Hero } from "@/components/Hero";
+import { Marquee } from "@/components/Marquee";
 import { Nav } from "@/components/Nav";
 import { Process } from "@/components/Process";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { Services } from "@/components/Services";
 import { Stats } from "@/components/Stats";
 import { Work } from "@/components/Work";
@@ -24,6 +26,7 @@ export default async function HomePage({
     <main id="top">
       <Nav />
       <Hero />
+      <Marquee />
       <About />
       <Stats />
       <Work />
@@ -34,6 +37,7 @@ export default async function HomePage({
       <Faq />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }

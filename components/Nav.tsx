@@ -40,28 +40,46 @@ export function Nav() {
           <Logo />
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
-          {links.map((link) => (
-            <a key={link.key} href={link.href} className="nav-pill">
-              {t(link.key)}
-            </a>
-          ))}
-        </nav>
+        <div className="hidden items-center gap-4 md:ml-auto md:flex">
+          <nav className="flex items-center gap-1">
+            {links.map((link) => (
+              <a key={link.key} href={link.href} className="nav-pill">
+                {t(link.key)}
+              </a>
+            ))}
+          </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+          <span aria-hidden style={{ color: "var(--color-walnut)" }}>
+            |
+          </span>
+
           <LocaleSwitch />
-          <a href="#contact" className="btn-ghost">
-            {t("cta")}
-          </a>
         </div>
 
         <button
           aria-label={open ? t("close") : t("menu")}
           onClick={() => setOpen((v) => !v)}
-          className="rounded-[var(--radius-buttons)] px-4 py-2 text-sm md:hidden"
-          style={{ border: "1px solid var(--color-warm-cream)", color: "var(--color-warm-cream)" }}
+          className="flex h-11 w-11 items-center justify-center rounded-full md:hidden"
+          style={{ color: "var(--color-warm-cream)" }}
         >
-          {open ? t("close") : `${t("menu")} ≡`}
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <motion.line
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              initial={false}
+              animate={open ? { x1: 3, y1: 3, x2: 15, y2: 15 } : { x1: 2, y1: 5, x2: 16, y2: 5 }}
+              transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+            />
+            <motion.line
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              initial={false}
+              animate={open ? { x1: 3, y1: 15, x2: 15, y2: 3 } : { x1: 2, y1: 13, x2: 16, y2: 13 }}
+              transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+            />
+          </svg>
         </button>
       </div>
 
@@ -75,7 +93,7 @@ export function Nav() {
             className="overflow-hidden md:hidden"
             style={{ backgroundColor: "var(--color-espresso)", borderTop: "1px solid var(--color-walnut)" }}
           >
-            <div className="container-page flex flex-col gap-1 py-4">
+            <div className="container-page flex flex-col items-center gap-1 py-4 text-center">
               {links.map((link) => (
                 <a
                   key={link.key}
@@ -86,11 +104,12 @@ export function Nav() {
                   {t(link.key)}
                 </a>
               ))}
-              <div className="mt-3 flex items-center justify-between">
+              <div
+                className="mt-3 w-full"
+                style={{ borderTop: "1px solid var(--color-walnut)" }}
+              />
+              <div className="flex items-center justify-center pt-3">
                 <LocaleSwitch />
-                <a href="#contact" onClick={() => setOpen(false)} className="btn-ghost">
-                  {t("cta")}
-                </a>
               </div>
             </div>
           </motion.div>

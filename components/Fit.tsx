@@ -34,8 +34,8 @@ function CrossIcon() {
 
 export function Fit() {
   const t = useTranslations("fit");
-  const fitItems = t.raw("fitItems") as string[];
-  const notFitItems = t.raw("notFitItems") as string[];
+  const fitItems = (t.raw("fitItems") as string[] | undefined) ?? [];
+  const notFitItems = (t.raw("notFitItems") as string[] | undefined) ?? [];
 
   return (
     <section className="section-gap" style={{ backgroundColor: "var(--color-midnight-cocoa)" }}>

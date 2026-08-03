@@ -25,11 +25,11 @@ export default async function Image({ params }: { params: { locale: string } }) 
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", maxWidth: 640 }}>
-          <div style={{ fontSize: 22, color: "#f5efc6", display: "flex" }}>Mila Patramanska</div>
+          <div style={{ fontSize: 22, color: "#ffffff", display: "flex" }}>Mila Patramanska</div>
           <div
             style={{
               fontSize: 48,
-              color: "#f5efc6",
+              color: "#ffffff",
               marginTop: 24,
               display: "flex",
               letterSpacing: "-0.03em",
@@ -41,10 +41,10 @@ export default async function Image({ params }: { params: { locale: string } }) 
             style={{
               marginTop: 32,
               display: "flex",
-              backgroundColor: "#a5bcd6",
+              backgroundColor: "#b23347",
               padding: "8px 16px",
               fontSize: 22,
-              color: "#231815",
+              color: "#ffffff",
               width: "fit-content",
             }}
           >

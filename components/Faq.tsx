@@ -9,7 +9,7 @@ type FaqItem = { question: string; answer: string };
 
 export function Faq() {
   const t = useTranslations("faq");
-  const items = t.raw("items") as FaqItem[];
+  const items = (t.raw("items") as FaqItem[] | undefined) ?? [];
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (

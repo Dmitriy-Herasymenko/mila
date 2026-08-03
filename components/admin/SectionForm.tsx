@@ -50,7 +50,7 @@ export function SectionForm({
             onClick={() => setLocale(loc)}
             className="rounded-[var(--radius-buttons)] px-4 py-2 text-[14px]"
             style={{
-              backgroundColor: locale === loc ? "var(--color-accent)" : "transparent",
+              backgroundColor: locale === loc ? "var(--color-cerulean)" : "transparent",
               color: locale === loc ? "var(--color-espresso)" : "var(--color-warm-cream)",
               border: locale === loc ? "none" : "1px solid var(--color-warm-cream)",
             }}
@@ -65,7 +65,7 @@ export function SectionForm({
       </div>
 
       <div className="mt-6 flex items-center gap-4">
-        <button type="button" onClick={handleSave} disabled={status === "saving"} className="btn-primary">
+        <button type="button" onClick={handleSave} disabled={status === "saving"} className="btn-admin-primary">
           {status === "saving" ? "Зберігаю…" : "Зберегти"}
         </button>
         {status === "saved" && (

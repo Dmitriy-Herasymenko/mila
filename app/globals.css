@@ -4,14 +4,15 @@
   /* Colors */
   --color-espresso: #231815;
   --color-midnight-cocoa: #4a2e27;
-  --color-warm-cream: #f5efc6;
-  --color-soft-cream: #f5efc6;
-  --color-walnut: rgba(245, 239, 198, 0.18);
-  --color-cedar: rgba(245, 239, 198, 0.3);
-  --color-driftwood: rgba(245, 239, 198, 0.55);
+  --color-warm-cream: #ffffff;
+  --color-soft-cream: #ffffff;
+  --color-walnut: rgba(255, 255, 255, 0.22);
+  --color-cedar: rgba(255, 255, 255, 0.38);
+  --color-driftwood: rgba(255, 255, 255, 0.64);
   --color-burnt-edge: #1c1310;
-  --color-accent: #a5bcd6;
+  --color-accent: #b23347;
   --color-wine: #4d0e12;
+  --color-cerulean: #a5bcd6;
 
   /* Fonts */
   --font-neue-haas: var(--font-inter), "Helvetica Neue", Helvetica, ui-sans-serif, system-ui, sans-serif;
@@ -69,7 +70,7 @@ body {
 
 ::selection {
   background: var(--color-accent);
-  color: var(--color-espresso);
+  color: var(--color-warm-cream);
 }
 
 button,
@@ -132,8 +133,8 @@ button:disabled {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-accent);
-  color: var(--color-espresso);
+  background: linear-gradient(135deg, #ff6f7f 0%, var(--color-accent) 60%, var(--color-wine) 100%);
+  color: var(--color-warm-cream);
   border: none;
   border-radius: var(--radius-buttons);
   font-family: var(--font-neue-haas);
@@ -217,4 +218,53 @@ textarea::placeholder {
 .pill-input:focus {
   outline: none;
   border-color: var(--color-accent);
+}
+
+.stat-item {
+  padding-left: 0;
+}
+
+@media (min-width: 640px) {
+  .stat-item:not(:first-child) {
+    border-left: 1px solid var(--color-walnut);
+    padding-left: 24px;
+  }
+}
+
+/* Admin panel uses its own accent (Cerulean Blue) to stay visually distinct from the public site */
+.btn-admin-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-cerulean);
+  color: var(--color-espresso);
+  border: none;
+  border-radius: var(--radius-buttons);
+  font-family: var(--font-neue-haas);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  padding: 12px 15px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-admin-primary:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
 }

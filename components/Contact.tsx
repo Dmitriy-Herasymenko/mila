@@ -12,7 +12,7 @@ const CONTACT_EMAIL = "hello@milapatramanska.com";
 export function Contact() {
   const t = useTranslations("contact");
   const tf = useTranslations("contact.form");
-  const budgetOptions = tf.raw("budgetOptions") as string[];
+  const budgetOptions = (tf.raw("budgetOptions") as string[] | undefined) ?? [];
   const [status, setStatus] = useState<Status>("idle");
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -44,7 +44,10 @@ export function Contact() {
     <section
       id="contact"
       className="section-gap relative overflow-hidden"
-      style={{ backgroundColor: "var(--color-espresso)" }}
+      style={{
+        background:
+          "linear-gradient(160deg, var(--color-espresso) 0%, var(--color-midnight-cocoa) 55%, var(--color-wine) 130%)",
+      }}
     >
       <div className="container-page relative grid grid-cols-1 gap-14 md:grid-cols-[1fr_1.2fr]">
         <div>

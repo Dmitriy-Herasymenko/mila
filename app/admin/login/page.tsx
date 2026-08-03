@@ -57,7 +57,7 @@ export default async function AdminLoginPage({
           </p>
         )}
 
-        <button type="submit" className="btn-primary mt-6 w-full">
+        <button type="submit" className="btn-admin-primary mt-6 w-full">
           Увійти
         </button>
       </form>
