@@ -1,15 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { HighlightNumber } from "./HighlightNumber";
-import { Reveal, RevealGroup, revealItem } from "./Reveal";
+import { Reveal } from "./Reveal";
 
 export function About() {
   const t = useTranslations("about");
   const paragraphs = (t.raw("paragraphs") as string[] | undefined) ?? [];
-  const highlights = (t.raw("highlights") as { label: string; value: string }[] | undefined) ?? [];
 
   return (
     <section id="about" className="section-gap" style={{ backgroundColor: "var(--color-espresso)" }}>
@@ -48,25 +45,6 @@ export function About() {
               </Reveal>
             ))}
           </div>
-
-          <RevealGroup className="mt-28 grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-4 sm:gap-x-0">
-            {highlights.map((h) => (
-              <motion.div key={h.label} variants={revealItem} className="stat-item pr-4">
-                <div
-                  className="font-display text-[26px] md:text-[32px]"
-                  style={{ color: "var(--color-warm-cream)", letterSpacing: "-0.02em" }}
-                >
-                  <HighlightNumber value={h.value} />
-                </div>
-                <div
-                  className="mt-2 text-[12px] uppercase"
-                  style={{ color: "var(--color-driftwood)", letterSpacing: "0.06em" }}
-                >
-                  {h.label}
-                </div>
-              </motion.div>
-            ))}
-          </RevealGroup>
         </div>
       </div>
     </section>

@@ -1,11 +1,42 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import { LocaleSwitch } from "./LocaleSwitch";
 import { Logo } from "./Logo";
+
+function MobileLocaleToggle() {
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  return (
+    <div className="flex items-center gap-2 text-[15px]">
+      {routing.locales.map((loc, i) => (
+        <span key={loc} className="flex items-center gap-2">
+          {i > 0 && (
+            <span aria-hidden style={{ color: "var(--color-walnut)" }}>
+              |
+            </span>
+          )}
+          <button
+            type="button"
+            onClick={() => router.replace(pathname, { locale: loc })}
+            style={{
+              color: loc === locale ? "var(--color-accent)" : "var(--color-driftwood)",
+              fontWeight: loc === locale ? 600 : 400,
+            }}
+          >
+            {loc.toUpperCase()}
+          </button>
+        </span>
+      ))}
+    </div>
+  );
+}
 
 const links = [
   { href: "#about", key: "about" },
@@ -108,8 +139,8 @@ export function Nav() {
                 className="mt-3 w-full"
                 style={{ borderTop: "1px solid var(--color-walnut)" }}
               />
-              <div className="flex items-center justify-center pt-3">
-                <LocaleSwitch />
+              <div className="flex items-center justify-center pb-2 pt-3">
+                <MobileLocaleToggle />
               </div>
             </div>
           </motion.div>
