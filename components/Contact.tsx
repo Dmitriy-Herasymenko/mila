@@ -7,11 +7,10 @@ import { Reveal } from "./Reveal";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
-const CONTACT_EMAIL = "hello@milapatramanska.com";
-
 export function Contact() {
   const t = useTranslations("contact");
   const tf = useTranslations("contact.form");
+  const contactEmail = t("email");
   const budgetOptions = (tf.raw("budgetOptions") as string[] | undefined) ?? [];
   const [status, setStatus] = useState<Status>("idle");
 
@@ -70,11 +69,11 @@ export function Contact() {
                 {t("directLabel")}
               </div>
               <a
-                href={`mailto:${CONTACT_EMAIL}`}
+                href={`mailto:${contactEmail}`}
                 className="font-display mt-1 inline-block text-[20px]"
                 style={{ color: "var(--color-warm-cream)" }}
               >
-                {CONTACT_EMAIL}
+                {contactEmail}
               </a>
             </div>
           </Reveal>

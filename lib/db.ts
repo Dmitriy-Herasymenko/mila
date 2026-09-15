@@ -9,7 +9,8 @@ export type EditableSection =
   | "services"
   | "fit"
   | "formats"
-  | "faq";
+  | "faq"
+  | "contact";
 
 export const EDITABLE_SECTIONS: EditableSection[] = [
   "hero",
@@ -21,6 +22,7 @@ export const EDITABLE_SECTIONS: EditableSection[] = [
   "fit",
   "formats",
   "faq",
+  "contact",
 ];
 
 function getClient() {

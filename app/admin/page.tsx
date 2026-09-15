@@ -12,6 +12,7 @@ const SECTION_LABELS: Record<string, string> = {
   fit: "Кому підходить/не підходить",
   formats: "Формати співпраці",
   faq: "Часті запитання",
+  contact: "Контакти",
 };
 
 export default function AdminDashboard() {
